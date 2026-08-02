@@ -7,12 +7,12 @@ const projects = [
       "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
     description:
       "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
-    tags: ["Design", "Frontend", "Proces"],
+    tags: ["Videoredigering", "Branding", "Proces"],
     image: `${import.meta.env.BASE_URL}interview.JPG`,
     links: [
       {
-        label: "Eksempel-link",
-        href: "https://github.com",
+        label: "Café Smagløs Instagram",
+        href: "https://www.instagram.com/cafesmaglos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
     ],
   },
@@ -23,7 +23,7 @@ const projects = [
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
-    tags: ["React", "Vite", "GitHub Pages"],
+    tags: ["Photoshop", "Fotografering", "Collage"],
     image: `${import.meta.env.BASE_URL}Youseewhatyouwannasee.png`,
     links: [
       {
@@ -43,7 +43,7 @@ const projects = [
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
-    tags: ["React", "Vite", "GitHub Pages"],
+    tags: ["React", "UX/UI Design", "GitHub Pages"],
     image: `${import.meta.env.BASE_URL}Youseewhatyouwannasee.png`,
     links: [
       {
