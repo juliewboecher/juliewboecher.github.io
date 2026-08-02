@@ -17,7 +17,7 @@ function AboutPage() {
           <h2>Jeg er nysgerrig på</h2>
           <p>Brugeroplevelser, visuel identitet og hvordan kode bliver til noget brugbart.</p>
         </div>
-        <img src={`${import.meta.env.BASE_URL}drawing.png`} alt="Et billede af Julie" className="portrait-image" />
+        <img src={`${import.meta.env.BASE_URL}drawing.png`} alt="Et billede af Julie" className="drawing-image" />
       </section>
     </div>
   );
