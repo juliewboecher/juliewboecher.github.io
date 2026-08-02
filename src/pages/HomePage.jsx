@@ -8,30 +8,28 @@ function HomePage() {
     <div className="page">
       <section className="hero-section">
         <div className="hero-grid">
-        <div className="hero-information">
-          <p className="eyebrow">Portfolio</p>
-          <h1>Hej, jeg hedder Julie.</h1>
-          <p className="hero-text">
-            Jeg arbejder med frontend, design og digitale produkter. Her samler
-            jeg projekter, proces og det, jeg lærer undervejs.
-          </p>
-        </div>
-        <div className="hero-image">
-          <img
-            src={`${import.meta.env.BASE_URL}portrait.png`}
-            alt="Et billede af Julie"
-            className="portrait-image"
-          />
-        </div>
-        </div>
-        <div className="hero-content">
-          <div className="actions">
-            <Link className="button" to="/projects">
-              Se projekter
-            </Link>
-            <Link className="button secondary" to="/contact">
-              Kontakt mig
-            </Link>
+          <div className="hero-information">
+            <p className="eyebrow">Portfolio</p>
+            <h1>Hej, jeg hedder Julie.</h1>
+            <p className="hero-text">
+              Jeg arbejder med frontend, design og digitale produkter. Her
+              samler jeg projekter, proces og det, jeg lærer undervejs.
+            </p>
+            <div className="actions">
+              <Link className="button" to="/projects">
+                Se projekter
+              </Link>
+              <Link className="button secondary" to="/contact">
+                Kontakt mig
+              </Link>
+            </div>
+          </div>
+          <div className="hero-image">
+            <img
+              src={`${import.meta.env.BASE_URL}portraitgrey.png`}
+              alt="Et billede af Julie"
+              className="portrait-image"
+            />
           </div>
         </div>
       </section>
