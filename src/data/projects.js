@@ -44,7 +44,7 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["React", "UX/UI Design", "GitHub Pages"],
-    image: `${import.meta.env.BASE_URL}Youseewhatyouwannasee.png`,
+    image: `${import.meta.env.BASE_URL}Gemlyplakat.png`,
     links: [
       {
         label: "Live site",
