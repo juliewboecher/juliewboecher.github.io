@@ -23,8 +23,11 @@ function ProjectPage() {
       <Link className="back-link" to="/projects">
         Tilbage til projekter
       </Link>
-
-      <img className="detail-image" src={project.image} alt="" />
+      <div className="detail-hero">
+        {project.image && (
+          <img className="detail-hero-image" src={project.image} alt="" />
+        )}
+      </div>
       <p className="eyebrow">{project.year}</p>
       <h1>{project.title}</h1>
       <p className="lead">{project.description}</p>
@@ -48,6 +51,20 @@ function ProjectPage() {
           </a>
         ))}
       </div>
+        {project.image && (
+          <img className="detail-image" src={project.image2} alt="" />
+        )}
+
+        {project.image3 && (
+          <img className="detail-image" src={project.image3} alt="" />
+        )}
+        {project.image4 && (
+          <img className="detail-image" src={project.image4} alt="" />
+        )}
+        {project.image5 && (
+          <img className="detail-image" src={project.image5} alt="" />
+        )}
+    
     </article>
   );
 }

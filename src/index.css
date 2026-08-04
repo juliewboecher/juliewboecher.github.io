@@ -41,14 +41,17 @@ textarea {
   width: min(100% - 2rem, 1120px);
   margin: 0 auto;
   padding: 1.25rem 0;
-  border-bottom: 1px solid #1d2430;
-  border-width: 100%;
+  
 }
 
 .brand {
   color: #111827;
   font-weight: 800;
   text-decoration: none;
+}
+
+.signatur {
+  width: 400px;
 }
 
 .site-nav {
@@ -231,6 +234,15 @@ p {
 .project-card a {
   color: #5b21b6;
   font-weight: 800;
+}
+
+.detail-hero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.detail-hero-image {
+  width: 400px;
 }
 
 .detail-image {

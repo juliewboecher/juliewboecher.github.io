@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <header className="site-header">
       <NavLink className="brand" to="/">
-        Julie Wendelboe Bøcher
+        <img className="signatur" src={`${import.meta.env.BASE_URL}signatur.svg`} alt="Logo" />
       </NavLink>
 
       <nav className="site-nav" aria-label="Primær navigation">
