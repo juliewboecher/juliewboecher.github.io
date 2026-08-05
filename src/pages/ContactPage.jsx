@@ -30,6 +30,11 @@ function ContactPage() {
           </a>
         </li>
       </ul>
+      <img
+        src={`${import.meta.env.BASE_URL}contact.JPG`}
+        alt="Et billede af Julie"
+        className="drawing-image"
+      />
     </div>
   );
 }
