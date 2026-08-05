@@ -12,22 +12,24 @@ function Navbar() {
   }, [location.pathname]);
 
   return (
-    <header className="site-header">
-      <NavLink className="brand" to="/" aria-label="Forside">
-        Julie Wendelboe Bøcher
-      </NavLink>
-
-      <nav className="site-nav" aria-label="Primær navigation">
-        <NavLink to="/" end>
-          Forside
+    <header className="site-header-box">
+      <div className="site-header">
+        <NavLink className="brand" to="/" aria-label="Forside">
+          <img src={`${import.meta.env.BASE_URL}initialer.svg`} alt="Logo" />
         </NavLink>
 
-        <NavLink to="/projects">Projekter</NavLink>
+        <nav className="site-nav" aria-label="Primær navigation">
+          <NavLink to="/" end>
+            Forside
+          </NavLink>
 
-        <NavLink to="/about">Om mig</NavLink>
+          <NavLink to="/projects">Projekter</NavLink>
 
-        <NavLink to="/contact">Kontakt</NavLink>
-      </nav>
+          <NavLink to="/about">Om mig</NavLink>
+
+          <NavLink to="/contact">Kontakt</NavLink>
+        </nav>
+      </div>
     </header>
   );
 }

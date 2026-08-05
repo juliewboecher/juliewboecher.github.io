@@ -11,8 +11,18 @@ function HomePage() {
           <div className="hero-information">
             <p className="eyebrow">Portfolio</p>
             <h1>Velkommen!</h1>
-            <h2 className="hero-text">Hej, mit navn er Julie Wendelboe Bøcher.</h2>
-            <h2 className="hero-text">Jeg er designer, og elsker at skabe kreative og værdiskabende løsninger.</h2>
+            <h2 className="hero-text">
+              Hej, mit navn er Julie Wendelboe Bøcher.
+            </h2>
+            <h2 className="hero-text">
+              Jeg er designer, og elsker at skabe kreative og værdiskabende
+              løsninger.
+            </h2>
+            <h2 className="hero-text">
+              Jeg er designer, og elsker at skabe kreative og værdiskabende
+              løsninger. Jeg er designer, og elsker at skabe kreative og
+              værdiskabende løsninger.
+            </h2>
             <div className="actions">
               <Link className="button" to="/projects">
                 Se projekter
@@ -22,6 +32,7 @@ function HomePage() {
               </Link>
             </div>
           </div>
+
           <div className="hero-image">
             <img
               src={`${import.meta.env.BASE_URL}initialer2.gif`}
@@ -31,13 +42,14 @@ function HomePage() {
           </div>
         </div>
       </section>
+      <a href="#featured-projects" className="look-button">
+        Tag et kig
+      </a>
 
-      <section className="section">
+      <section id="featured-projects" className="section">
         <div className="section-heading">
           <p className="eyebrow">Udvalgte projekter</p>
-          <h2>Start med få projekter og gør dem stærke.</h2>
         </div>
-
         <div className="project-grid">
           {featuredProjects.map((project) => (
             <article className="project-card" key={project.slug}>
