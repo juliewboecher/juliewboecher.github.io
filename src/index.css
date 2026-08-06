@@ -157,6 +157,22 @@ textarea {
   opacity: 0;
 }
 
+.see-all-projects {
+  margin-top: 3rem;
+}
+
+.see-all-button {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: #1d2430;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 h1,
 h2,
 h3,
@@ -279,8 +295,12 @@ p {
 }
 
 .project-card a {
-  color: #658ae1;
+  color: #111827;
   font-weight: 800;
+}
+.project-card a:hover,
+.project-card a:active {
+  color: #5a2597;
 }
 
 .detail-hero {
@@ -303,8 +323,12 @@ p {
 .back-link {
   display: inline-flex;
   margin-bottom: 1.5rem;
-  color: #658ae1;
+  color: #111827;
   font-weight: 800;
+}
+.back-link:hover,
+.back-link:active {
+  color: #5a2597;
 }
 
 .tag-list {
@@ -376,7 +400,26 @@ p {
 }
 
 .drawing-image {
-  width: 100%;
- 
+  width: 400px;
   object-fit: cover;
+}
+
+.page-narrow {
+  width: min(100% - 4rem, 1200px);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+}
+.about-me-image {
+  width: 800px;
+}
+
+.about-hero-image {
+  width: 400px;
 }

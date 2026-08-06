@@ -74,6 +74,11 @@ function HomePage() {
           ))}
         </div>
       </section>
+      <div className="see-all-projects">
+        <Link className="see-all-button" to="/projects">
+          Se alle projekter
+        </Link>
+      </div>
     </div>
   );
 }

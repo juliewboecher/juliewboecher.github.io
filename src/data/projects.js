@@ -64,6 +64,27 @@ const projects = [
     ],
   },
   {
+    slug: "Story Hangers",
+    title: "Story Hangers",
+    year: "2025",
+    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
+    description:
+      "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
+    tags: ["Photoshop", "Fotografering", "Collage"],
+    image: `${import.meta.env.BASE_URL}luminamockup.png`,
+    image2: `${import.meta.env.BASE_URL}luminalogo.png`,
+    links: [
+      {
+        label: "Live site",
+        href: "https://username.github.io",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/username/username.github.io",
+      },
+    ],
+  },
+  {
     slug: "Spilscafeen",
     title: "Spilscaféen",
     year: "2026",
