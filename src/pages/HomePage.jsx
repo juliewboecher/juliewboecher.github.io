@@ -35,7 +35,7 @@ function HomePage() {
 
           <div className="hero-image">
             <img
-              src={`${import.meta.env.BASE_URL}initialer2.gif`}
+              src={`${import.meta.env.BASE_URL}initialer4.gif`}
               alt="Et billede af Julie"
               className="portrait-image"
             />
@@ -43,7 +43,17 @@ function HomePage() {
         </div>
       </section>
       <a href="#featured-projects" className="look-button">
-        Tag et kig
+        <img
+          src={`${import.meta.env.BASE_URL}takealook.png`}
+          className="look-image static-image"
+          alt="Tag et kig på mine projekter"
+        />
+
+        <img
+          src={`${import.meta.env.BASE_URL}takealook.gif`}
+          className="look-image gif-image"
+          alt=""
+        />
       </a>
 
       <section id="featured-projects" className="section">

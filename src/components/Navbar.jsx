@@ -19,9 +19,6 @@ function Navbar() {
         </NavLink>
 
         <nav className="site-nav" aria-label="Primær navigation">
-          <NavLink to="/" end>
-            Forside
-          </NavLink>
 
           <NavLink to="/projects">Projekter</NavLink>
 

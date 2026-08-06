@@ -25,7 +25,7 @@ function ProjectPage() {
       </Link>
       <div className="detail-hero">
         {project.image && (
-          <img className="detail-hero-image" src={project.image} alt="" />
+          <img className="detail-hero-image" src={project.image2} alt="" />
         )}
       </div>
       <p className="eyebrow">{project.year}</p>
@@ -52,7 +52,7 @@ function ProjectPage() {
         ))}
       </div>
         {project.image && (
-          <img className="detail-image" src={project.image2} alt="" />
+          <img className="detail-image" src={project.image} alt="" />
         )}
 
         {project.image3 && (
