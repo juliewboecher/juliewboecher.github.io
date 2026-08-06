@@ -66,28 +66,28 @@ const projects = [
   {
     slug: "Story Hangers",
     title: "Story Hangers",
-    year: "2025",
+    year: "2026",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["Photoshop", "Fotografering", "Collage"],
-    image: `${import.meta.env.BASE_URL}luminamockup.png`,
-    image2: `${import.meta.env.BASE_URL}luminalogo.png`,
+    image: `${import.meta.env.BASE_URL}storyhangersmockup.png`,
+    image2: `${import.meta.env.BASE_URL}storyhangerslogo.svg`,
     links: [
       {
         label: "Live site",
-        href: "https://username.github.io",
+        href: "https://juliewboecher.github.io/customer-experience-exam/",
       },
       {
         label: "GitHub repo",
-        href: "https://github.com/username/username.github.io",
+        href: "https://github.com/juliewboecher/customer-experience-exam",
       },
     ],
   },
   {
     slug: "Spilscafeen",
     title: "Spilscaféen",
-    year: "2026",
+    year: "2025",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",

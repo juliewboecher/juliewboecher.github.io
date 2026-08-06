@@ -2,17 +2,19 @@ function AboutPage() {
   return (
     <div className="page-narrow">
       <p className="eyebrow">Om mig</p>
-      <h1>Hvem er jeg?</h1>
+
       <div className="about-hero">
+        <div>
+          <h1>Hvem er jeg?</h1>
+          <p>
+            Jeg er en passioneret udvikler med fokus på at skabe brugervenlige og
+            æstetisk tiltalende digitale oplevelser.
+          </p>
+        </div>
         <img
           src={`${import.meta.env.BASE_URL}portrait2.png`}
           alt="Et billede af Julie"
           className="drawing-image"
-        />
-        <img
-          src={`${import.meta.env.BASE_URL}aboutme.svg`}
-          alt="Et billede af Julie"
-          className="about-me-image"
         />
       </div>
       <section className="info-list" aria-label="Om mig detaljer">

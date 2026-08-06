@@ -7,21 +7,12 @@ function HomePage() {
   return (
     <div className="page">
       <section className="hero-section">
+        <p className="eyebrow">Portfolio</p>
+        <h1>Velkommen!</h1>
         <div className="hero-grid">
           <div className="hero-information">
-            <p className="eyebrow">Portfolio</p>
-            <h1>Velkommen!</h1>
             <h2 className="hero-text">
-              Hej, mit navn er Julie Wendelboe Bøcher.
-            </h2>
-            <h2 className="hero-text">
-              Jeg er designer, og elsker at skabe kreative og værdiskabende
-              løsninger.
-            </h2>
-            <h2 className="hero-text">
-              Jeg er designer, og elsker at skabe kreative og værdiskabende
-              løsninger. Jeg er designer, og elsker at skabe kreative og
-              værdiskabende løsninger.
+              Mit navn er Julie Wendelboe Bøcher, og jeg er UX/UI designer.
             </h2>
             <div className="actions">
               <Link className="button" to="/projects">
@@ -62,13 +53,15 @@ function HomePage() {
         </div>
         <div className="project-grid">
           {featuredProjects.map((project) => (
-            <article className="project-card" key={project.slug}>
+            <article className="project-card">
               <img src={project.image} alt={`Preview af ${project.title}`} />
               <div className="project-card-content">
                 <p className="eyebrow">{project.year}</p>
                 <h3>{project.title}</h3>
-                <p>{project.summary}</p>
-                <Link to={`/projects/${project.slug}`}>Læs mere</Link>
+                
+                <Link to={`/projects/${project.slug}`}>
+                  Læs mere →
+                </Link>
               </div>
             </article>
           ))}
