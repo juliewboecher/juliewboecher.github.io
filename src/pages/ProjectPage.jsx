@@ -7,7 +7,7 @@ function ProjectPage() {
 
   if (!project) {
     return (
-      <div className="page narrow">
+      <div className="page-narrow">
         <p className="eyebrow">404</p>
         <h1>Projektet blev ikke fundet</h1>
         <p>Det projekt findes ikke i listen endnu.</p>
@@ -19,13 +19,13 @@ function ProjectPage() {
   }
 
   return (
-    <article className="page narrow">
+    <article className="page-narrow">
       <Link className="back-link" to="/projects">
         Tilbage til projekter
       </Link>
       <div className="detail-hero">
         {project.image && (
-          <img className="detail-hero-image" src={project.image} alt="" />
+          <img className="detail-hero-image" src={project.image2} alt="" />
         )}
       </div>
       <p className="eyebrow">{project.year}</p>
@@ -52,7 +52,7 @@ function ProjectPage() {
         ))}
       </div>
         {project.image && (
-          <img className="detail-image" src={project.image2} alt="" />
+          <img className="detail-image" src={project.image} alt="" />
         )}
 
         {project.image3 && (

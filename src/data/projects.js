@@ -8,12 +8,12 @@ const projects = [
     description:
       "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
     tags: ["Videoredigering", "Branding", "Proces"],
-    image: `${import.meta.env.BASE_URL}smagloeslogo.png`,
-    image2: `${import.meta.env.BASE_URL}redigering1.PNG`,
-    image3: `${import.meta.env.BASE_URL}someinterview.JPG`,
-    image4: `${import.meta.env.BASE_URL}redigering2.PNG`,
-    image5: `${import.meta.env.BASE_URL}redigering3.jpg`,
-    image6: `${import.meta.env.BASE_URL}smagloeslogo.png`,
+    image: `${import.meta.env.BASE_URL}smagloesmockup.png`,
+    image2: `${import.meta.env.BASE_URL}smagloeslogo.png`,
+    image3: `${import.meta.env.BASE_URL}redigering1.PNG`,
+    image4: `${import.meta.env.BASE_URL}someinterview.JPG`,
+    image5: `${import.meta.env.BASE_URL}redigering2.PNG`,
+    image6: `${import.meta.env.BASE_URL}redigering3.jpg`,
     links: [
       {
         label: "Café Smagløs Instagram",
@@ -29,7 +29,8 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["React", "UX/UI Design", "GitHub Pages"],
-    image: `${import.meta.env.BASE_URL}gemlylogo.png`,
+    image: `${import.meta.env.BASE_URL}gemlymockup.png`,
+    image2: `${import.meta.env.BASE_URL}gemlylogo.png`,
     links: [
       {
         label: "Live site",
@@ -49,7 +50,8 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["Photoshop", "Fotografering", "Collage"],
-    image: `${import.meta.env.BASE_URL}Youseewhatyouwannasee.png`,
+    image: `${import.meta.env.BASE_URL}youseemockup.png`,
+    image2: `${import.meta.env.BASE_URL}photoshop.svg`,
     links: [
       {
         label: "Live site",
@@ -62,14 +64,57 @@ const projects = [
     ],
   },
   {
-    slug: "Spilscafeen",
-    title: "Spilscaféen",
+    slug: "Story Hangers",
+    title: "Story Hangers",
     year: "2026",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["Photoshop", "Fotografering", "Collage"],
-    image: `${import.meta.env.BASE_URL}spilcafeen.png`,
+    image: `${import.meta.env.BASE_URL}storyhangersmockup.png`,
+    image2: `${import.meta.env.BASE_URL}storyhangerslogo.svg`,
+    links: [
+      {
+        label: "Live site",
+        href: "https://juliewboecher.github.io/customer-experience-exam/",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/juliewboecher/customer-experience-exam",
+      },
+    ],
+  },
+  {
+    slug: "Spilscafeen",
+    title: "Spilscaféen",
+    year: "2025",
+    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
+    description:
+      "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
+    tags: ["Photoshop", "Fotografering", "Collage"],
+    image: `${import.meta.env.BASE_URL}spilmockup.png`,
+    image2: `${import.meta.env.BASE_URL}spilcafeen.png`,
+    links: [
+      {
+        label: "Live site",
+        href: "https://username.github.io",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/username/username.github.io",
+      },
+    ],
+  },
+  {
+    slug: "Lumina One",
+    title: "Lumina One",
+    year: "2025",
+    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
+    description:
+      "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
+    tags: ["Photoshop", "Fotografering", "Collage"],
+    image: `${import.meta.env.BASE_URL}luminamockup.png`,
+    image2: `${import.meta.env.BASE_URL}luminalogo.png`,
     links: [
       {
         label: "Live site",

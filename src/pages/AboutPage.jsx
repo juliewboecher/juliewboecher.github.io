@@ -1,17 +1,22 @@
 function AboutPage() {
   return (
-    <div className="page narrow">
+    <div className="page-narrow">
       <p className="eyebrow">Om mig</p>
-      <h1>Hvem er jeg?</h1>
-      <p className="lead">
-        Skriv kort om din faglige retning, dine interesser og hvad du gerne vil
-        blive bedre til. Hold teksten konkret og personlig.
-      </p>
-      <img
-        src={`${import.meta.env.BASE_URL}portrait2.png`}
-        alt="Et billede af Julie"
-        className="drawing-image"
-      />
+
+      <div className="about-hero">
+        <div>
+          <h1>Hvem er jeg?</h1>
+          <p>
+            Jeg er en passioneret udvikler med fokus på at skabe brugervenlige og
+            æstetisk tiltalende digitale oplevelser.
+          </p>
+        </div>
+        <img
+          src={`${import.meta.env.BASE_URL}portrait2.png`}
+          alt="Et billede af Julie"
+          className="drawing-image"
+        />
+      </div>
       <section className="info-list" aria-label="Om mig detaljer">
         <div>
           <h2>Jeg arbejder med</h2>
