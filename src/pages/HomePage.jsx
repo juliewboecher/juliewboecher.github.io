@@ -7,6 +7,7 @@ function HomePage() {
   return (
     <div className="page">
       <p className="eyebrow">Portfolio</p>
+      <div className="hero-red-glow"></div>
       <section className="hero-section">
         <h1>Hejsa!</h1>
         <div className="hero-information">
