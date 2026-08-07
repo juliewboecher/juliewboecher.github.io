@@ -17,7 +17,7 @@ function ContactPage() {
               rel="noreferrer"
               target="_blank"
             >
-              GitHub
+              Github<img className="footer-icon" src={`${import.meta.env.BASE_URL}gitred.svg`} alt="GitHub" />
             </a>
           </li>
           <li>
@@ -26,7 +26,7 @@ function ContactPage() {
               rel="noreferrer"
               target="_blank"
             >
-              LinkedIn
+              LinkedIn<img className="footer-icon" src={`${import.meta.env.BASE_URL}linkedred.svg`} alt="LinkedIn" />
             </a>
           </li>
         </ul>
