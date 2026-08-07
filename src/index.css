@@ -2,7 +2,7 @@
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
-  color: #1d2430;
+  color: #180B0B;
   background: #fcfaf6;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -41,10 +41,9 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 1000;
-
-  width: min(100% - 4rem, 1200px);
-  margin: 0 auto;
+  width: 100%;
   background-color: #fcfaf6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .site-header {
@@ -52,25 +51,25 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: 100%;
-  margin: auto;
+  
+  width: min(100% - 4rem, 1200px);
+  margin: 0 auto;
   padding: 0.5rem 0;
 }
 .site-header img {
-  width: 50px;
+  width: 150px;
 
 }
 
 .brand {
-  color: #111827;
+  color: #180B0B;
   font-weight: 800;
   text-decoration: none;
   font-size: 3rem;
-  width: 70px;
 }
 
 .signatur {
-  width: 200px;
+  width: 400px;
 }
 
 .site-nav {
@@ -84,7 +83,7 @@ textarea {
 
 .site-nav a {
   border-radius: 999px;
-  color: #111827;
+  color: #180B0B;
   padding: 0.55rem 0.8rem;
   text-decoration: none;
   letter-spacing: 0;
@@ -92,13 +91,13 @@ textarea {
 
 .site-nav a.active,
 .site-nav a:hover {
-  color:#780c0c;
+  color:#B31619;
 }
 
 .page {
   width: min(100% - 4rem, 1200px);
   margin: 0 auto;
-  padding: 7rem 0 5rem;
+  padding: 5rem 0 5rem;
 }
 
 .narrow {
@@ -109,9 +108,11 @@ textarea {
   display: grid;
   gap: 1.5rem;
   align-content: center;
+  justify-items: center;
+  text-align: center;
   min-height: 58svh;
   padding: 2rem 0;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 .hero-section h1 {
@@ -120,7 +121,7 @@ textarea {
 
 .section {
   padding: 0rem 0;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .section-heading {
@@ -140,7 +141,7 @@ textarea {
 
 .eyebrow {
   margin: 0;
-  color:#780c0c;
+  color:#B31619;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -153,24 +154,12 @@ textarea {
 }
 
 .look-image {
-  width: 50px;
+  width: 100px;
   display: block;
+  margin: 0 auto;
 }
 
-.gif-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
 
-.look-button:hover .gif-image {
-  opacity: 1;
-}
-
-.look-button:hover .static-image {
-  opacity: 0;
-}
 
 .see-all-projects {
   margin-top: 3rem;
@@ -182,7 +171,7 @@ textarea {
   align-items: center;
   padding: 0.7rem 1rem;
   border-radius: 999px;
-  background: #1d2430;
+  background: #180B0B;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
@@ -198,15 +187,16 @@ p {
 h1 {
   max-width: 760px;
   margin-bottom: 1rem;
-  color:#1d2430;
+  color:#B31619;
   font-size: clamp(2.6rem, 8vw, 5.5rem);
   line-height: 0.95;
   letter-spacing: 0;
+  font-family: 'Chango', sans-serif;
 }
 
 h2 {
   margin-bottom: 0.75rem;
-  color: #111827;
+  color: #180B0B;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   line-height: 1.05;
   letter-spacing: 0;
@@ -215,7 +205,7 @@ h2 {
 
 h3 {
   margin-bottom: 0.6rem;
-  color: #111827;
+  color: #180B0B;
   font-size: 1.35rem;
   letter-spacing: 0;
 }
@@ -233,18 +223,7 @@ p {
   margin-bottom: 20px;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
 
-.hero-information {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
 
 .hero-image {
   display: flex;
@@ -257,8 +236,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
 .button {
@@ -269,16 +250,16 @@ p {
   
   border-radius: 999px;
   color: #ffffff;
-  background:#1d2430;
+  background:#180B0B;
   padding: 0.7rem 1rem;
   font-weight: 700;
   text-decoration: none;
 }
 
 .button.secondary {
-  color: #111827;
+  color: #180B0B;
   background: transparent;
-  border: 1px solid #111827;
+  border: 1px solid #180B0B;
 }
 
 .portrait-image {
@@ -332,13 +313,13 @@ p {
 }
 
 .project-card a {
-  color: #111827;
- 
+  color: #180B0B;
+
   text-decoration: none;
 }
 .project-card a:hover,
 .project-card a:active {
-  color:#780c0c;
+  color:#B31619;
 }
 
 .detail-hero {
@@ -361,12 +342,12 @@ p {
 .back-link {
   display: inline-flex;
   margin-bottom: 1.5rem;
-  color: #111827;
+  color: #180B0B;
   font-weight: 800;
 }
 .back-link:hover,
 .back-link:active {
-  color:#780c0c;
+  color:#B31619;
 }
 
 .tag-list {
@@ -379,9 +360,8 @@ p {
 }
 
 .tag-list li {
-  border: 1px solid #ded6ca;
+  border: 1px solid #B31619;
   border-radius: 999px;
-  background: #ffffff;
   color: #475569;
   padding: 0.35rem 0.7rem;
   font-size: 0.9rem;
@@ -410,12 +390,12 @@ p {
 }
 
 .contact-list a {
-  color:#111827;
+  color:#180B0B;
   font-weight: 800;
 }
 .contact-list a:hover,
 .contact-list a:active {
-  color:#780c0c;
+  color:#B31619;
 }
 
 @media (max-width: 720px) {
@@ -467,7 +447,7 @@ p {
 
 .site-footer {
   padding: 2rem 1rem;
-  background: #780c0c;
+  background: #180B0B;
   border-top: 1px solid #eee;
   text-align: center;
 }
@@ -476,3 +456,8 @@ p {
   color: #ffffff;
 }
 
+.footer-signatur {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}

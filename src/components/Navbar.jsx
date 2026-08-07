@@ -15,7 +15,7 @@ function Navbar() {
     <header className="site-header-box">
       <div className="site-header">
         <NavLink className="brand" to="/" aria-label="Forside">
-          <img src={`${import.meta.env.BASE_URL}initialer.svg`} alt="Logo" />
+          <img src={`${import.meta.env.BASE_URL}jwbred.svg`} alt="Logo" />
         </NavLink>
 
         <nav className="site-nav" aria-label="Primær navigation">
