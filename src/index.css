@@ -21,6 +21,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 a {
@@ -93,22 +94,15 @@ textarea {
 
 .hero-section {
   position: relative;
-
   width: 100vw;
   margin-left: calc(50% - 50vw);
 
   display: grid;
-  gap: 0;
   align-content: center;
   justify-items: center;
   text-align: center;
 
   min-height: 58svh;
-  padding: 0;
-  margin-bottom: 0;
-
-  /* VIGTIGT: ikke hidden */
-  overflow: visible;
 }
 
 /* Nederst venstre */
