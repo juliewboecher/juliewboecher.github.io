@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Offside&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Chango&family=Offside&display=swap');
+
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -110,13 +112,13 @@ textarea {
   content: "";
   position: absolute;
 
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
 
   left: -250px;
   bottom: -350px;
 
-  background: #ff4d4d;
+  background: #B31619;
   border-radius: 50%;
 
   filter: blur(120px);
@@ -131,13 +133,13 @@ textarea {
   content: "";
   position: absolute;
 
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
 
   right: -250px;
   top: -350px;
 
-  background: #ff4d4d;
+  background: #B31619;
   border-radius: 50%;
 
   filter: blur(120px);
@@ -161,7 +163,7 @@ textarea {
 }
 
 .hero-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .hero-section p {
@@ -251,6 +253,7 @@ h2 {
   line-height: 1.05;
   letter-spacing: 0;
   font-weight: 400;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 h3 {
@@ -258,12 +261,19 @@ h3 {
   color: #180B0B;
   font-size: 1.35rem;
   letter-spacing: 0;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 p {
   color: #526173;
   line-height: 1.65;
   font-size: 1.35rem;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+a {
+  color: #180B0B;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 .hero-text,
@@ -344,7 +354,11 @@ p {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.project-card-button {
+  margin-top: auto;
+  font-size: 1.5rem;
 }
 
 .project-card img {
@@ -374,19 +388,28 @@ p {
 
 .detail-hero {
   display: flex;
-  justify-content: center;
   margin-bottom: 2rem;
 }
 .detail-hero-image {
   width: 400px;
 }
 
+.detail-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
 .detail-image {
-  width: 100%;
+  width: 500px;
   aspect-ratio: 16 / 9;
   border-radius: 0.75rem;
   object-fit: cover;
   margin-bottom: 2rem;
+}
+
+.detail-text-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .back-link {
