@@ -6,12 +6,13 @@ function HomePage() {
 
   return (
     <div className="page">
-
+      <p className="eyebrow">Portfolio</p>
       <section className="hero-section">
-        <p className="eyebrow">Portfolio</p>
         <h1>Hejsa!</h1>
-        <h2 className="hero-text">Mit navn er Julie</h2>
-        <p className="hero-description">& jeg er UX/UI designer.</p>
+        <div className="hero-information">
+          <h2 className="hero-text">Mit navn er Julie Wendelboe Bøcher</h2>
+          <p className="hero-description">& jeg er UX/UI designer.</p>
+        </div>
       </section>
 
       <a href="#featured-projects" className="look-button">
@@ -23,12 +24,12 @@ function HomePage() {
       </a>
 
       <div className="actions">
-            <Link className="button" to="/projects">
-              Se projekter
-            </Link>
-            <Link className="button secondary" to="/contact">
-              Kontakt mig
-            </Link>
+        <Link className="button" to="/projects">
+          Se projekter
+        </Link>
+        <Link className="button secondary" to="/contact">
+          Kontakt mig
+        </Link>
       </div>
 
       <section id="featured-projects" className="section">
