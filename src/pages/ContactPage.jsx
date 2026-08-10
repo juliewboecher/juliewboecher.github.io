@@ -4,7 +4,7 @@ function ContactPage() {
       <p className="eyebrow">Kontakt</p>
       <h1>Lad os tale sammen.</h1>
       <p className="lead">
-        Tilpas links og mailadresse, så siden peger på dine egne profiler.
+        Tøv ikke med at kontakte mig.
       </p>
 
       <ul className="contact-list">
@@ -17,7 +17,6 @@ function ContactPage() {
             rel="noreferrer"
             target="_blank"
           >
-            Github
             <img
               className="footer-icon"
               src={`${import.meta.env.BASE_URL}gitred.svg`}
@@ -31,7 +30,6 @@ function ContactPage() {
             rel="noreferrer"
             target="_blank"
           >
-            LinkedIn
             <img
               className="footer-icon"
               src={`${import.meta.env.BASE_URL}linkedred.svg`}

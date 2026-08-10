@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Offside&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Chango&family=Offside&display=swap');
+
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -44,7 +46,7 @@ textarea {
   z-index: 1000;
   width: 100%;
   background-color: #fcfaf6;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  
 }
 
 .site-header {
@@ -85,7 +87,7 @@ textarea {
 .page {
   width: min(100% - 4rem, 1200px);
   margin: 0 auto;
-  padding: 5rem 0 5rem;
+  padding: 7rem 0 5rem;
 }
 
 .narrow {
@@ -95,78 +97,32 @@ textarea {
 .hero-section {
   position: relative;
   width: 100vw;
-  margin-left: calc(50% - 50vw);
-
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  text-align: center;
-
   min-height: 58svh;
 }
 
-/* Nederst venstre */
-.hero-section::before {
-  content: "";
-  position: absolute;
-
-  width: 700px;
-  height: 700px;
-
-  left: -250px;
-  bottom: -350px;
-
-  background: #ff4d4d;
-  border-radius: 50%;
-
-  filter: blur(120px);
-  opacity: 0.6;
-
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Øverst højre */
-.hero-section::after {
-  content: "";
-  position: absolute;
-
-  width: 700px;
-  height: 700px;
-
-  right: -250px;
-  top: -350px;
-
-  background: #ff4d4d;
-  border-radius: 50%;
-
-  filter: blur(120px);
-  opacity: 0.6;
-
-  pointer-events: none;
-  z-index: -1;
-}
 
 /* Dit eksisterende indhold */
 .hero-information {
   position: relative;
   z-index: 1;
 
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .hero-section h1 {
-  font-size: 10rem;
+  font-size: 7rem;
+  width: 100%;
 }
 
 .hero-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .hero-section p {
   font-size: 1.5rem;
   max-width: 600px;
+  margin-top: 1rem;
 }
 
 .section {
@@ -192,21 +148,40 @@ textarea {
 .eyebrow {
   margin: 0;
   color:#B31619;
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
-.look-button {
+.read-more-button {
   position: relative;
   display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 200px;
+  top: 500px;
+  width: 50px;
 }
 
-.look-image {
-  width: 100px;
+.read-more-image {
+ 
   display: block;
   margin: 0 auto;
+   width: 50px;
+  display: block;
+  animation: bounce 2.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
 }
 
 
@@ -251,6 +226,7 @@ h2 {
   line-height: 1.05;
   letter-spacing: 0;
   font-weight: 400;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 h3 {
@@ -258,12 +234,19 @@ h3 {
   color: #180B0B;
   font-size: 1.35rem;
   letter-spacing: 0;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 p {
   color: #526173;
   line-height: 1.65;
   font-size: 1.35rem;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+a {
+  color: #180B0B;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 .hero-text,
@@ -282,14 +265,24 @@ p {
   width: 500px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: left;
+  justify-content: left;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  align-items: left;
+  justify-content: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .button {
@@ -344,11 +337,15 @@ p {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.project-card-button {
+  margin-top: auto;
+  font-size: 1.5rem;
 }
 
 .project-card img {
-  width: 600px;
+  width: 400px;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
@@ -374,19 +371,63 @@ p {
 
 .detail-hero {
   display: flex;
-  justify-content: center;
   margin-bottom: 2rem;
+  
 }
-.detail-hero-image {
+
+.detail-hero-img {
   width: 400px;
+  justify-content: right;
+}
+
+.detail-hero-image {
+  justify-content: right;
+}
+
+.detail-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .detail-image {
+  width: 300px;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.detail-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.detail-images img {
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 0.75rem;
   object-fit: cover;
-  margin-bottom: 2rem;
+
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.detail-images img:nth-child(odd) {
+  transform: translateX(-50px);
+}
+
+.detail-images img:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.detail-images img.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.detail-text-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .back-link {
@@ -421,13 +462,11 @@ p {
 .info-list {
   display: grid;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  
 }
 
-.info-list div,
-.contact-list {
-  padding: 1rem;
-}
+
 
 .info-list h2 {
   font-size: 1.15rem;
@@ -436,7 +475,9 @@ p {
 .contact-list {
   display: grid;
   gap: 0.75rem;
-  padding-left: 2rem;
+  padding-left: 0rem;
+  margin-bottom: 10rem;
+  list-style: none;
 }
 
 .contact-list a {
@@ -483,8 +524,12 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-
 }
+
+.about-hero p {
+  margin-top: 7rem;
+}
+
 .about-me-image {
   width: 800px;
 }
@@ -526,14 +571,43 @@ p {
   gap: 1rem;
 }
 
-.footer-links a {
+.footer-mail {
   color: #ffffff;
   text-decoration: none;
+  padding-top: 1rem;
+}
+.footer-mail:hover {
+  color: #B31619;
+}
+
+.footer-links a {
+  position: relative;
+  display: block;
 }
 
 .footer-icon {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  display: block;
+}
+
+.icon-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.icon-white,
+.icon-red {
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover .icon-white {
+  opacity: 0;
+}
+
+.footer-links a:hover .icon-red {
+  opacity: 1;
 }
 
 @media (max-width: 700px) {

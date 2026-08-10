@@ -7,28 +7,32 @@ function ProjectsPage() {
       <section className="section-intro">
         <p className="eyebrow">Projekter</p>
         <h1>Projekter</h1>
-        <p>
-          Nedenfor kan du se nogle af mine projekter.
-        </p>
+        <p>Nedenfor kan du se nogle af mine projekter.</p>
       </section>
-     
 
       <section className="project-grid" aria-label="Projektliste">
         {projects.map((project) => (
           <article className="project-card" key={project.slug}>
-            <img src={project.image} alt={`Preview af ${project.title}`} />
+            <Link
+              to={`/projects/${project.slug}`}
+              className="project-card-link"
+            >
+              <img src={project.image} alt={`Preview af ${project.title}`} />
+            </Link>
             <div className="project-card-content">
-              <p className="eyebrow">{project.year}</p>
-              <h2>{project.title}</h2>
-             
-              <ul className="tag-list">
-                {project.tags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
-              <Link to={`/projects/${project.slug}`}>
-                Se projekt →
-              </Link>
+              <div className="project-card-description">
+                <p className="eyebrow">{project.year}</p>
+                <h2>{project.title}</h2>
+                <ul className="tag-list">
+                  {project.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="project-card-button">
+                <Link to={`/projects/${project.slug}`}>Se projekt →</Link>
+              </div>
             </div>
           </article>
         ))}

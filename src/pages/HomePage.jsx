@@ -7,24 +7,26 @@ function HomePage() {
   return (
     <div className="page">
       <p className="eyebrow">Portfolio</p>
-      <div className="hero-red-glow"></div>
+
       <section className="hero-section">
-        <h1>Hejsa!</h1>
         <div className="hero-information">
-          <h2 className="hero-text">Mit navn er Julie Wendelboe Bøcher</h2>
-          <p className="hero-description">& jeg er UX/UI designer.</p>
+          <h2 className="hero-text">
+            Mit navn er Julie Wendelboe Bøcher, & jeg er
+          </h2>
+          <p className="hero-description"></p>
         </div>
+        <h1>UX/UI Designer.</h1>
       </section>
 
-      <a href="#featured-projects" className="look-button">
+      <a href="#featured-projects" className="read-more-button">
         <img
-          src={`${import.meta.env.BASE_URL}bigarrowred.svg`}
-          className="look-image static-image"
+          src={`${import.meta.env.BASE_URL}dykned.svg`}
+          className="read-more-image static-image"
           alt="Tag et kig på mine projekter"
         />
       </a>
 
-      <div className="actions">
+      <div id="featured-projects" className="hero-actions">
         <Link className="button" to="/projects">
           Se projekter
         </Link>
@@ -33,19 +35,28 @@ function HomePage() {
         </Link>
       </div>
 
-      <section id="featured-projects" className="section">
+      <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Udvalgte projekter</p>
         </div>
         <div className="project-grid">
           {featuredProjects.map((project) => (
-            <article className="project-card">
-              <img src={project.image} alt={`Preview af ${project.title}`} />
+            <article className="project-card" key={project.slug}>
+              <Link
+                to={`/projects/${project.slug}`}
+                className="project-card-link"
+              >
+                <img src={project.image} alt={`Preview af ${project.title}`} />
+              </Link>
               <div className="project-card-content">
-                <p className="eyebrow">{project.year}</p>
-                <h3>{project.title}</h3>
+                <div className="project-card-description">
+                  <p className="eyebrow">{project.year}</p>
+                  <h2>{project.title}</h2>
+                </div>
 
-                <Link to={`/projects/${project.slug}`}>Læs mere →</Link>
+                <div className="project-card-button">
+                  <Link to={`/projects/${project.slug}`}>Se projekt →</Link>
+                </div>
               </div>
             </article>
           ))}
