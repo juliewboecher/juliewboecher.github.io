@@ -20,11 +20,11 @@ function Navbar() {
 
         <nav className="site-nav" aria-label="Primær navigation">
 
-          <NavLink to="/projects">Projekter</NavLink>
+          <NavLink to="/projects">PROJEKTER</NavLink>
 
-          <NavLink to="/about">Om mig</NavLink>
+          <NavLink to="/about">OM MIG</NavLink>
 
-          <NavLink to="/contact">Kontakt</NavLink>
+          <NavLink to="/contact">KONTAKT</NavLink>
         </nav>
       </div>
     </header>

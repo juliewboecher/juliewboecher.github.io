@@ -7,20 +7,20 @@ function HomePage() {
   return (
     <div className="page">
       <p className="eyebrow">Portfolio</p>
-      <div className="hero-red-glow"></div>
+     
       <section className="hero-section">
-        <h1>Hejsa!</h1>
         <div className="hero-information">
           <h2 className="hero-text">
-            Mit navn er Julie Wendelboe Bøcher, & jeg er UX/UI designer.
+            Mit navn er Julie Wendelboe Bøcher, & jeg er
           </h2>
           <p className="hero-description"></p>
         </div>
+        <h1>UX/UI Designer.</h1>
       </section>
 
-      <a href="#featured-projects" className="look-button">
+      <a href="#featured-projects" className="read-more-button">
         <img
-          src={`${import.meta.env.BASE_URL}bigarrowred.svg`}
+          src={`${import.meta.env.BASE_URL}dykned.svg`}
           className="look-image static-image"
           alt="Tag et kig på mine projekter"
         />
