@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div className="page">
       <p className="eyebrow">Portfolio</p>
-     
+
       <section className="hero-section">
         <div className="hero-information">
           <h2 className="hero-text">
@@ -21,12 +21,12 @@ function HomePage() {
       <a href="#featured-projects" className="read-more-button">
         <img
           src={`${import.meta.env.BASE_URL}dykned.svg`}
-          className="look-image static-image"
+          className="read-more-image static-image"
           alt="Tag et kig på mine projekter"
         />
       </a>
 
-      <div className="actions">
+      <div id="featured-projects" className="hero-actions">
         <Link className="button" to="/projects">
           Se projekter
         </Link>
@@ -35,7 +35,7 @@ function HomePage() {
         </Link>
       </div>
 
-      <section id="featured-projects" className="section">
+      <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Udvalgte projekter</p>
         </div>

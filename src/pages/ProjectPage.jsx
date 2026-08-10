@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router";
 import projects from "../data/projects";
+import { useEffect, useRef } from "react";
 
 function ProjectPage() {
   const { slug } = useParams();
@@ -17,32 +18,55 @@ function ProjectPage() {
       </div>
     );
   }
+   const imagesRef = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      },
+    );
+
+    imagesRef.current.forEach((image) => {
+      if (image) observer.observe(image);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <article className="page-narrow">
       <Link className="back-link" to="/projects">
         Tilbage til projekter
       </Link>
-<div className="detail-hero">
-      <div className="detail-hero-information">
-        <p className="eyebrow">{project.year}</p>
-        <h1 className="detail-title">{project.title}</h1>
-        <ul className="tag-list">
-          {project.tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
-        <p className="lead">{project.description}</p>
+      <div className="detail-hero">
+        <div className="detail-hero-information">
+          <p className="eyebrow">{project.year}</p>
+          <h1 className="detail-title">{project.title}</h1>
+          <ul className="tag-list">
+            {project.tags.map((tag) => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="detail-hero-image">
+          {project.image && (
+            <img className="detail-hero-img" src={project.image} alt="" />
+          )}
+        </div>
       </div>
-
-
-      <div className="detail-hero-image">
-        {project.image && (
-          <img className="detail-hero-image" src={project.image2} alt="" />
-        )}
-      </div>
-</div>
-
+      {project.image && (
+        <img className="detail-image" src={project.image2} alt="" />
+      )}
       <div className="actions">
         {project.links.map((link) => (
           <a
@@ -56,26 +80,48 @@ function ProjectPage() {
           </a>
         ))}
       </div>
-      {project.image && (
-        <img className="detail-image" src={project.image} alt="" />
-      )}
 
       <section className="detail-text-section">
         <h2>Processbeskrivelse</h2>
-        <p>Her skal der stå noget om dette forløb, som jeg skal skrive inde i json-filen.
-          Derfor skal jeg også huske at finde et tag til dette forløb.
-        </p>
+        <p className="lead">{project.description}</p>
       </section>
+      <div className="detail-images">
+        {project.image3 && (
+          <img
+            ref={(el) => (imagesRef.current[0] = el)}
+            className="detail-image"
+            src={project.image3}
+            alt=""
+          />
+        )}
 
-      {project.image3 && (
-        <img className="detail-image" src={project.image3} alt="" />
-      )}
-      {project.image4 && (
-        <img className="detail-image" src={project.image4} alt="" />
-      )}
-      {project.image5 && (
-        <img className="detail-image" src={project.image5} alt="" />
-      )}
+        {project.image4 && (
+          <img
+            ref={(el) => (imagesRef.current[1] = el)}
+            className="detail-image"
+            src={project.image4}
+            alt=""
+          />
+        )}
+
+        {project.image5 && (
+          <img
+            ref={(el) => (imagesRef.current[2] = el)}
+            className="detail-image"
+            src={project.image5}
+            alt=""
+          />
+        )}
+
+        {project.image6 && (
+          <img
+            ref={(el) => (imagesRef.current[3] = el)}
+            className="detail-image"
+            src={project.image6}
+            alt=""
+          />
+        )}
+      </div>
     </article>
   );
 }

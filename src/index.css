@@ -87,7 +87,7 @@ textarea {
 .page {
   width: min(100% - 4rem, 1200px);
   margin: 0 auto;
-  padding: 5rem 0 5rem;
+  padding: 7rem 0 5rem;
 }
 
 .narrow {
@@ -106,8 +106,8 @@ textarea {
   position: relative;
   z-index: 1;
 
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .hero-section h1 {
@@ -122,6 +122,7 @@ textarea {
 .hero-section p {
   font-size: 1.5rem;
   max-width: 600px;
+  margin-top: 1rem;
 }
 
 .section {
@@ -147,7 +148,7 @@ textarea {
 .eyebrow {
   margin: 0;
   color:#B31619;
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -167,6 +168,20 @@ textarea {
  
   display: block;
   margin: 0 auto;
+   width: 50px;
+  display: block;
+  animation: bounce 2.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
 }
 
 
@@ -250,7 +265,7 @@ a {
   width: 500px;
 }
 
-.actions {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -258,6 +273,16 @@ a {
   justify-content: left;
   margin-top: 7rem;
   margin-bottom: 3rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: left;
+  justify-content: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .button {
@@ -320,7 +345,7 @@ a {
 }
 
 .project-card img {
-  width: 600px;
+  width: 400px;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
@@ -347,9 +372,16 @@ a {
 .detail-hero {
   display: flex;
   margin-bottom: 2rem;
+  
 }
-.detail-hero-image {
+
+.detail-hero-img {
   width: 400px;
+  justify-content: right;
+}
+
+.detail-hero-image {
+  justify-content: right;
 }
 
 .detail-title {
@@ -358,11 +390,39 @@ a {
 }
 
 .detail-image {
-  width: 500px;
+  width: 300px;
   aspect-ratio: 16 / 9;
   border-radius: 0.75rem;
   object-fit: cover;
-  margin-bottom: 2rem;
+}
+
+.detail-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.detail-images img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.detail-images img:nth-child(odd) {
+  transform: translateX(-50px);
+}
+
+.detail-images img:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.detail-images img.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .detail-text-section {
@@ -402,13 +462,11 @@ a {
 .info-list {
   display: grid;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  
 }
 
-.info-list div,
-.contact-list {
-  padding: 1rem;
-}
+
 
 .info-list h2 {
   font-size: 1.15rem;
@@ -417,7 +475,9 @@ a {
 .contact-list {
   display: grid;
   gap: 0.75rem;
-  padding-left: 2rem;
+  padding-left: 0rem;
+  margin-bottom: 10rem;
+  list-style: none;
 }
 
 .contact-list a {
@@ -464,8 +524,12 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-
 }
+
+.about-hero p {
+  margin-top: 7rem;
+}
+
 .about-me-image {
   width: 800px;
 }
@@ -507,14 +571,43 @@ a {
   gap: 1rem;
 }
 
-.footer-links a {
+.footer-mail {
   color: #ffffff;
   text-decoration: none;
+  padding-top: 1rem;
+}
+.footer-mail:hover {
+  color: #B31619;
+}
+
+.footer-links a {
+  position: relative;
+  display: block;
 }
 
 .footer-icon {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  display: block;
+}
+
+.icon-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.icon-white,
+.icon-red {
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover .icon-white {
+  opacity: 0;
+}
+
+.footer-links a:hover .icon-red {
+  opacity: 1;
 }
 
 @media (max-width: 700px) {
