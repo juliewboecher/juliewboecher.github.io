@@ -1,0 +1,43 @@
+
+.page-narrow {
+  width: min(100% - 4rem, 1200px);
+  margin: 0 auto;
+  padding: 7rem 0rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color:#B31619;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.lead {
+  max-width: 680px;
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 0rem;
+  margin-bottom: 10rem;
+  list-style: none;
+}
+
+.contact-list a {
+  color:#180B0B;
+  font-weight: 800;
+}
+.contact-list a:hover,
+.contact-list a:active {
+  color:#B31619;
+}
+
+.footer-icon {
+  width: 50px;
+  display: block;
+}

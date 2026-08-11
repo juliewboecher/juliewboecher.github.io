@@ -1,0 +1,38 @@
+.page-narrow {
+  width: min(100% - 4rem, 1200px);
+  margin: 0 auto;
+  padding: 7rem 0rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color:#B31619;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+
+.drawing-image {
+  width: 600px;
+  object-fit: cover;
+}
+
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.about-hero p {
+  margin-top: 7rem;
+}
+
+.about-me-image {
+  width: 800px;
+}
+
+.about-hero-image {
+  width: 400px;
+}
