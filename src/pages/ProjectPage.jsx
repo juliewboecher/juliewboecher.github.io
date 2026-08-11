@@ -50,7 +50,7 @@ function ProjectPage() {
       </Link>
       <div className="detail-hero">
         <div className="detail-hero-information">
-          <p className="eyebrow">{project.year}</p>
+          <p className="eyebrow-heading">{project.year}</p>
           <h1 className="detail-title">{project.title}</h1>
           <ul className="tag-list">
             {project.tags.map((tag) => (

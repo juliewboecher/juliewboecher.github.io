@@ -6,7 +6,7 @@ function ProjectsPage() {
   return (
     <div className="page-narrow">
       <section className="section-intro">
-        <p className="eyebrow">Projekter</p>
+        <p className="eyebrow-heading">Projekter</p>
         <h1>Projekter</h1>
         <p>Nedenfor kan du se nogle af mine projekter.</p>
       </section>

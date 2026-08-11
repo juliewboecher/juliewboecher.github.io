@@ -3,7 +3,7 @@ import "./ContactPage.css";
 function ContactPage() {
   return (
     <div className="page-narrow">
-      <p className="eyebrow">Kontakt</p>
+      <p className="eyebrow-heading">Kontakt</p>
       <h1>Lad os tale sammen.</h1>
       <p className="lead">
         Tøv ikke med at kontakte mig.

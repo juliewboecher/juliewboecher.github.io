@@ -42,16 +42,7 @@ textarea {
 }
 
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
 
-  50% {
-    transform: translateY(6px);
-  }
-}
 
 h1,
 h2,
@@ -100,8 +91,23 @@ a {
   font-family: 'Carrois Gothic', sans-serif;
 }
 
+.eyebrow {
+  margin: 0;
+  color:#B31619;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
 
-
+.eyebrow-heading{
+  margin: 0;
+  color:#B31619;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
 
 
 

@@ -1,28 +1,5 @@
 const projects = [
   {
-    slug: "SoMe-Manager",
-    title: "SoMe Manager for Café Smagløs",
-    year: "2026",
-    type: "Arbejde",
-    summary:
-      "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
-    description:
-      "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
-    tags: ["Videoredigering", "Branding", "Proces"],
-    image: `${import.meta.env.BASE_URL}smaglosmock2.png`,
-    image2: `${import.meta.env.BASE_URL}smagloeslogo.png`,
-    image3: `${import.meta.env.BASE_URL}redigering1.PNG`,
-    image4: `${import.meta.env.BASE_URL}redigering3.jpg`,
-    image5: `${import.meta.env.BASE_URL}redigering2.PNG`,
-    image6: `${import.meta.env.BASE_URL}someinterview.JPG`,
-    links: [
-      {
-        label: "Café Smagløs Instagram",
-        href: "https://www.instagram.com/cafesmaglos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      },
-    ],
-  },
-  {
     slug: "Webapp-projekt",
     title: "Webapp projekt",
     year: "2026",
@@ -42,6 +19,29 @@ const projects = [
       {
         label: "GitHub repo",
         href: "https://github.com/mamelishah/gemly-project-webapplication",
+      },
+    ],
+  },
+  {
+    slug: "SoMe-Manager",
+    title: "SoMe Manager for Café Smagløs",
+    year: "2026",
+    type: "Arbejde",
+    summary:
+      "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
+    description:
+      "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
+    tags: ["Videoredigering", "Branding", "Proces"],
+    image: `${import.meta.env.BASE_URL}smaglosmock2.png`,
+    image2: `${import.meta.env.BASE_URL}smagloeslogo.png`,
+    image3: `${import.meta.env.BASE_URL}redigering1.PNG`,
+    image4: `${import.meta.env.BASE_URL}redigering3.jpg`,
+    image5: `${import.meta.env.BASE_URL}redigering2.PNG`,
+    image6: `${import.meta.env.BASE_URL}someinterview.JPG`,
+    links: [
+      {
+        label: "Café Smagløs Instagram",
+        href: "https://www.instagram.com/cafesmaglos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
     ],
   },
