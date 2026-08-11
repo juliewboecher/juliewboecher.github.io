@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import projects from "../data/projects";
+import "./HomePage.css";
+
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);

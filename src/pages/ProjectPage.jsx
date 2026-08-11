@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router";
 import projects from "../data/projects";
 import { useEffect, useRef } from "react";
+import "./ProjectPage.css"
 
 function ProjectPage() {
   const { slug } = useParams();
