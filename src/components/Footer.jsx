@@ -4,13 +4,14 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-content">
-        <img
-          src={`${import.meta.env.BASE_URL}jwbhvid2.svg`}
-          alt="Julie Wendelboe Bøcher"
-          className="footer-signatur"
-        />
-
-        <p className="footer-text">© 2026 Julie Wendelboe Bøcher.</p>
+        <div className="footer-left">
+          <img
+            src={`${import.meta.env.BASE_URL}jwbhvid2.svg`}
+            alt="Julie Wendelboe Bøcher"
+            className="footer-signatur"
+          />
+          <p className="footer-text">© 2026 Julie Wendelboe Bøcher.</p>
+        </div>
 
         <div className="footer-links">
           <a className="footer-mail" href="mailto:dinmail@email.com">

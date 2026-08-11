@@ -5,15 +5,6 @@
   padding: 7rem 0 5rem;
 }
 
-.eyebrow {
-  margin: 0;
-  color:#B31619;
-  font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
 .hero-section {
   position: relative;
   width: 100vw;
@@ -85,6 +76,17 @@
   animation: bounce 2.5s ease-in-out infinite;
 }
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 .section {
   padding: 0rem 0;
   margin-top: 2rem;
@@ -120,14 +122,19 @@
 }
 
 .project-card-content {
-  padding: 2rem;
-  display: flex;
+  padding: 0rem;
+
   flex-direction: column;
 }
 
 .project-card-button {
   margin-top: auto;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.project-card-button:hover {
+  color: #B31619;
 }
 
 .project-card img {
@@ -180,4 +187,27 @@
     min-height: auto;
     padding-top: 2rem;
   }
+}
+
+.about-section {
+  padding: 4rem 0;
+}
+
+.drawing-image {
+  width: 600px;
+  
+  border-radius: 20px;
+}
+
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-hero-text {
+  padding: 2rem;
+}
+
+.about-hero p {
+  margin-top: 7rem;
 }

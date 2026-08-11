@@ -8,7 +8,7 @@ function HomePage() {
 
   return (
     <div className="page">
-      <p className="eyebrow">Portfolio</p>
+      <p className="eyebrow-heading">Portfolio</p>
 
       <section className="hero-section">
         <div className="hero-information">
@@ -39,7 +39,7 @@ function HomePage() {
 
       <section className="section">
         <div className="section-heading">
-          <p className="eyebrow">Udvalgte projekter</p>
+          <p className="eyebrow-heading">Udvalgte projekter</p>
         </div>
         <div className="project-grid">
           {featuredProjects.map((project) => (
@@ -70,6 +70,28 @@ function HomePage() {
           Se alle projekter
         </Link>
       </div>
+      <section className="about-section">
+        <p className="eyebrow-heading">Om mig</p>
+        <div className="about-hero">
+          <img
+            src={`${import.meta.env.BASE_URL}portrait2.png`}
+            alt="Et billede af Julie"
+            className="drawing-image"
+          />
+          <div className="about-hero-text">
+            <h1>Hvem er jeg?</h1>
+            <p>
+              Jeg er en passioneret udvikler med fokus på at skabe brugervenlige
+              og æstetisk tiltalende digitale oplevelser.
+            </p>
+            <div className="read-more-about">
+              <Link className="project-card-button" to="/about">
+                læs mere →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import "./AboutPage.css";
 function AboutPage() {
   return (
     <div className="page-narrow">
-      <p className="eyebrow">Om mig</p>
+      <p className="eyebrow-heading">Om mig</p>
 
       <div className="about-hero">
         <div>

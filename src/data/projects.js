@@ -1,5 +1,32 @@
 const projects = [
   {
+    slug: "Webapp-projekt",
+    title: "Webapp projekt",
+    year: "2026",
+    type: "Skole",
+    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
+    description:
+      "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
+    tags: ["React", "UX/UI Design", "GitHub Pages"],
+    image: `${import.meta.env.BASE_URL}gemlymock.png`,
+    image2: `${import.meta.env.BASE_URL}gemlylogo.png`,
+    image3: `${import.meta.env.BASE_URL}gemlysave.gif`,
+    image4: `${import.meta.env.BASE_URL}gemlylogoskitser.svg`,
+    image5: `${import.meta.env.BASE_URL}gemlynameskitser.svg`,
+    image6: `${import.meta.env.BASE_URL}gemlymoodboard.png`,
+    image7: `${import.meta.env.BASE_URL}gemlynavbar.svg`,
+    links: [
+      {
+        label: "Live site",
+        href: "https://mamelishah.github.io/gemly-project-webapplication/?fbclid=IwY2xjawTccINleHRuA2FlbQIxMABicmlkETEzRHQ1UGtGVFRHNmlQcUNDc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmjDh_q66Pf6jNzjWrCZSkALHrZub2cB-06XqTNPDHs7uUtp1SKoVGIU3HEq_aem_SHpQW8Mv1u0v50kKUtWqcg",
+      },
+      {
+        label: "GitHub repo",
+        href: "https://github.com/mamelishah/gemly-project-webapplication",
+      },
+    ],
+  },
+  {
     slug: "SoMe-Manager",
     title: "SoMe Manager for Café Smagløs",
     year: "2026",
@@ -19,29 +46,6 @@ const projects = [
       {
         label: "Café Smagløs Instagram",
         href: "https://www.instagram.com/cafesmaglos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      },
-    ],
-  },
-  {
-    slug: "Webapp-projekt",
-    title: "Webapp projekt",
-    year: "2026",
-    type: "Skole",
-    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
-    description:
-      "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
-    tags: ["React", "UX/UI Design", "GitHub Pages"],
-    image: `${import.meta.env.BASE_URL}gemlymock.png`,
-    image2: `${import.meta.env.BASE_URL}gemlylogo.png`,
-    image3: `${import.meta.env.BASE_URL}gemlysave.gif`,
-    links: [
-      {
-        label: "Live site",
-        href: "https://mamelishah.github.io/gemly-project-webapplication/?fbclid=IwY2xjawTccINleHRuA2FlbQIxMABicmlkETEzRHQ1UGtGVFRHNmlQcUNDc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmjDh_q66Pf6jNzjWrCZSkALHrZub2cB-06XqTNPDHs7uUtp1SKoVGIU3HEq_aem_SHpQW8Mv1u0v50kKUtWqcg",
-      },
-      {
-        label: "GitHub repo",
-        href: "https://github.com/mamelishah/gemly-project-webapplication",
       },
     ],
   },

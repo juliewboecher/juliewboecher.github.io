@@ -50,8 +50,9 @@ function ProjectPage() {
       </Link>
       <div className="detail-hero">
         <div className="detail-hero-information">
-          <p className="eyebrow">{project.year}</p>
+          <p className="eyebrow-heading">{project.year}</p>
           <h1 className="detail-title">{project.title}</h1>
+          <p className="detail-subtitle">{project.summary}</p>
           <ul className="tag-list">
             {project.tags.map((tag) => (
               <li key={tag}>{tag}</li>
@@ -119,6 +120,14 @@ function ProjectPage() {
             ref={(el) => (imagesRef.current[3] = el)}
             className="detail-image"
             src={project.image6}
+            alt=""
+          />
+        )}
+        {project.image6 && (
+          <img
+            ref={(el) => (imagesRef.current[4] = el)}
+            className="detail-image"
+            src={project.image7}
             alt=""
           />
         )}
