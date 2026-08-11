@@ -84,6 +84,11 @@ function HomePage() {
               Jeg er en passioneret udvikler med fokus på at skabe brugervenlige
               og æstetisk tiltalende digitale oplevelser.
             </p>
+            <div className="read-more-about">
+              <Link className="project-card-button" to="/about">
+                læs mere →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -123,13 +123,18 @@
 
 .project-card-content {
   padding: 0rem;
-  display: flex;
+
   flex-direction: column;
 }
 
 .project-card-button {
   margin-top: auto;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.project-card-button:hover {
+  color: #B31619;
 }
 
 .project-card img {

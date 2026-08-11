@@ -11,6 +11,10 @@ const projects = [
     image: `${import.meta.env.BASE_URL}gemlymock.png`,
     image2: `${import.meta.env.BASE_URL}gemlylogo.png`,
     image3: `${import.meta.env.BASE_URL}gemlysave.gif`,
+    image4: `${import.meta.env.BASE_URL}gemlylogoskitser.svg`,
+    image5: `${import.meta.env.BASE_URL}gemlynameskitser.svg`,
+    image6: `${import.meta.env.BASE_URL}gemlymoodboard.png`,
+    image7: `${import.meta.env.BASE_URL}gemlynavbar.svg`,
     links: [
       {
         label: "Live site",
