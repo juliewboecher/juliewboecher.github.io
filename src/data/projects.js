@@ -8,6 +8,15 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["React", "UX/UI Design", "GitHub Pages"],
+    title2: "Adobe Premiere Pro",
+    description2:
+      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
+    title3: "Reel",
+    description3: "Beskriv hvordan du har brugt Reel i projektet.",
+    title4: "Flow",
+    description4: "Beskriv hvordan du har brugt Flow i projektet.",
+    title5: "Udvikling",
+    description5: "Beskriv hvordan du har brugt Flow i projektet.",
     image: `${import.meta.env.BASE_URL}gemlymock.png`,
     image2: `${import.meta.env.BASE_URL}gemlylogo.png`,
     image3: `${import.meta.env.BASE_URL}gemlysave.gif`,
@@ -36,6 +45,15 @@ const projects = [
     description:
       "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
     tags: ["Videoredigering", "Branding", "Proces"],
+    title2: "Adobe Premiere Pro",
+    description2:
+      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
+    title3: "Reel",
+    description3: "Beskriv hvordan du har brugt Reel i projektet.",
+    title4: "Flow",
+    description4: "Beskriv hvordan du har brugt Flow i projektet.",
+    title5: "Udvikling",
+    description5: "Beskriv hvordan du har brugt Flow i projektet.",
     image: `${import.meta.env.BASE_URL}smaglosmock2.png`,
     image2: `${import.meta.env.BASE_URL}smagloeslogo.png`,
     image3: `${import.meta.env.BASE_URL}redigering1.PNG`,
@@ -58,8 +76,19 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["Photoshop", "Fotografering", "Collage"],
-    image: `${import.meta.env.BASE_URL}surrealistiskmock.png`,
+    title2: "Billedmateriale",
+    description2:
+      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
+    title3: "Lag",
+    description3: "Beskriv hvordan du har brugt Reel i projektet.",
+    title4: "Flow",
+    description4: "Beskriv hvordan du har brugt Flow i projektet.",
+    title5: "Udvikling",
+    description5: "Beskriv hvordan du har brugt Flow i projektet.",
+    image: `${import.meta.env.BASE_URL}Youseewhatyouwannasee.png`,
     image2: `${import.meta.env.BASE_URL}photoshop.svg`,
+    image3: `${import.meta.env.BASE_URL}surrealistiskbilleder.png`,
+    image4: `${import.meta.env.BASE_URL}surrealistisknobg.png`,
     links: [
       {
         label: "Live site",
@@ -80,6 +109,15 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["Photoshop", "Fotografering", "Collage"],
+    title2: "Adobe Premiere Pro",
+    description2:
+      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
+    title3: "Reel",
+    description3: "Beskriv hvordan du har brugt Reel i projektet.",
+    title4: "Flow",
+    description4: "Beskriv hvordan du har brugt Flow i projektet.",
+    title5: "Udvikling",
+    description5: "Beskriv hvordan du har brugt Flow i projektet.",
     image: `${import.meta.env.BASE_URL}storyhangermock.png`,
     image2: `${import.meta.env.BASE_URL}storyhangerslogo.svg`,
     links: [
@@ -102,6 +140,15 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["Photoshop", "Fotografering", "Collage"],
+    title2: "Adobe Premiere Pro",
+    description2:
+      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
+    title3: "Reel",
+    description3: "Beskriv hvordan du har brugt Reel i projektet.",
+    title4: "Flow",
+    description4: "Beskriv hvordan du har brugt Flow i projektet.",
+    title5: "Udvikling",
+    description5: "Beskriv hvordan du har brugt Flow i projektet.",
     image: `${import.meta.env.BASE_URL}luminamock.png`,
     image2: `${import.meta.env.BASE_URL}luminalogo.png`,
     links: [
@@ -124,6 +171,15 @@ const projects = [
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
     tags: ["Photoshop", "Fotografering", "Collage"],
+    title2: "Adobe Premiere Pro",
+    description2:
+      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
+    title3: "Reel",
+    description3: "Beskriv hvordan du har brugt Reel i projektet.",
+    title4: "Flow",
+    description4: "Beskriv hvordan du har brugt Flow i projektet.",
+    title5: "Udvikling",
+    description5: "Beskriv hvordan du har brugt Flow i projektet.",
     image: `${import.meta.env.BASE_URL}spilcafemock.png`,
     image2: `${import.meta.env.BASE_URL}spilcafeen.png`,
     links: [

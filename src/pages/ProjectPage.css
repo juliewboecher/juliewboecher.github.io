@@ -1,23 +1,32 @@
-
 .page-narrow {
-  width: min(100% - 4rem, 1200px);
+  width: min(1200px, calc(100% - 4rem));
   margin: 0 auto;
-  padding: 7rem 0rem;
+  padding: 7rem 0;
+  box-sizing: border-box;
 }
+
+
+/* =========================
+   BUTTONS
+========================= */
 
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 2.75rem;
-  
   border-radius: 999px;
   color: #ffffff;
-  background:#180B0B;
+  background: #180B0B;
   padding: 0.7rem 1rem;
   font-weight: 700;
   text-decoration: none;
 }
+
+
+/* =========================
+   BACK LINK
+========================= */
 
 .back-link {
   display: inline-flex;
@@ -25,24 +34,34 @@
   color: #180B0B;
   font-weight: 800;
 }
+
 .back-link:hover,
 .back-link:active {
-  color:#B31619;
+  color: #B31619;
 }
+
+
+/* =========================
+   HERO
+========================= */
 
 .detail-hero {
   display: flex;
   margin-bottom: 2rem;
-  
-}
-
-.detail-hero-img {
-  width: 400px;
-  justify-content: right;
 }
 
 .detail-hero-image {
-  justify-content: right;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.detail-hero-img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .detail-title {
@@ -50,46 +69,34 @@
   margin-bottom: 1rem;
 }
 
+
+/* =========================
+   EXTRA IMAGE
+========================= */
+
 .detail-image {
+  display: block;
   width: 300px;
+  max-width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 0.75rem;
   object-fit: cover;
 }
 
-.detail-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
 
-.detail-images img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 0.75rem;
-  object-fit: cover;
-
-  opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.detail-images img:nth-child(odd) {
-  transform: translateX(-50px);
-}
-
-.detail-images img:nth-child(even) {
-  transform: translateX(50px);
-}
-
-.detail-images img.show {
-  opacity: 1;
-  transform: translateX(0);
-}
+/* =========================
+   PROCESS DESCRIPTION
+========================= */
 
 .detail-text-section {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+
+
+/* =========================
+   TAGS
+========================= */
 
 .tag-list {
   display: flex;
@@ -109,12 +116,125 @@
   font-weight: 700;
 }
 
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: flex-start;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+
+.project-process {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  margin: 8rem 0;
+}
+
+.process-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+.process-row.reverse .process-image {
+  grid-column: 2;
+}
+
+.process-row.reverse .process-text {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.process-image {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.process-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.75rem;
+
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.process-row:not(.reverse) .process-image img {
+  transform: translateX(-50px);
+}
+
+.process-row.reverse .process-image img {
+  transform: translateX(50px);
+}
+
+.process-image img.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.process-text {
+  max-width: 500px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .page-narrow {
+    width: min(100% - 2rem, 1200px);
+    padding: 4rem 0;
+  }
+
+  .detail-title {
+    font-size: 2.25rem;
+  }
+
+  .detail-hero-image {
+    justify-content: center;
+  }
+
+  .detail-hero-img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .project-process {
+    gap: 5rem;
+    margin: 5rem 0;
+  }
+
+  .process-row,
+  .process-row.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 2rem;
+  }
+
+  .process-row.reverse > * {
+    direction: ltr;
+  }
+
+  .process-text {
+    max-width: none;
+  }
+
 }
