@@ -13,6 +13,11 @@
   font-size: 2rem;
   color: #B31619;
 }
+
+.detail-text-section {
+  width: 100%;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
