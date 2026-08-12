@@ -5,7 +5,7 @@ const projects = [
     year: "2026",
     type: "Skole",
     summary:
-      "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
+      "“Hvordan kan vi hjælpe vores målgruppe i deres research og planlægning efter at finde mindre kendte steder at besøge, når de rejser? Og hvordan skaber vi en brandidentitet som giver appen værdi for brugerne?”",
     description:
       "Det kan hurtigt blive til mange timers research og organisering, før de faktisk finder de steder, de ender med at besøge. Det har vi forsøgt at løse med Gemly. En webapp som samler søgning og filtrering, organisering af fundne steder, rutevejledning og deling af de skjulte perler, de selv finder.",
     tags: ["React", "UX/UI Design", "GitHub Pages"],
@@ -46,15 +46,16 @@ const projects = [
     year: "2026",
     type: "Arbejde",
     summary:
-      "Et projektkort, som du kan kopiere og ændre til dit eget projekt.",
+      "Hvordan kan jeg skabe en rød tråd gennem caféens optræden på sociale medier? Og hvordan kan jeg skabe indhold på virksomhedens sociale medier, som skaber værdi for seerne og giver dem lyst til at besøge caféen?",
     description:
-      "Beskriv problemet, processen, din rolle, de vigtigste valg og hvad du lærte. Gør projektet konkret, så andre kan forstå dit arbejde.",
-    tags: ["Videoredigering", "Branding", "Proces"],
-    title2: "Adobe Premiere Pro",
-    description2:
-      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
-    title3: "Reel",
-    description3: "Beskriv hvordan du har brugt Reel i projektet.",
+      "Café Smagløs er en velkendt café i Aarhus, men har førhen ikke haft en bevidst strategi med fremtræden på sociale medier. Jeg analyserer hvordan indhold præsterer og ud fra det, stræber jeg efter at skabe indhold som har værdi for Café Smagløs målgruppe på sociale medier.",
+    tags: ["Performanceanalyse", "Branding", "Videoredigering"],
+    title2: "Mit arbejde på Café Smagløs",
+    title25: " - Vince, driftschef på Café Smagløs",
+    description2: "“Siden januar har Julie og jeg arbejdet tæt sammen om at skabe et nyt fundament for Café Smagløs' digitale tilstedeværelse og har været med til at udvikle den retning og det visuelle udtryk, vi ønsker for vores sociale platforme. Det er stadig en proces med masser af udvikling og læring, men der er allerede sket meget, og retningen begynder for alvor at tage form.”",
+    title3: "Kommunikation og planlægning",
+    description3:
+      "I mit arbejde som SoMe Manager, planlægger jeg, i dialog med Café Smagløs driftschef, hvad og hvornår indhold deles. Jeg er komfortabel i at have en stor del af ansvaret i planlægningen og eksekveringen.",
     title4: "Flow",
     description4: "Beskriv hvordan du har brugt Flow i projektet.",
     title5: "Udvikling",
