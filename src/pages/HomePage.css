@@ -198,58 +198,13 @@
 }
 
 
+
+
 .animated-dot {
   display: inline-block;
-  animation:
-    dot-x 1.8s linear forwards,
-    dot-y 1.8s cubic-bezier(0.45, 0, 0.55, 1) forwards;
-}
+  animation: dot-bounce 2.2s linear forwards;
+  transform-origin: center bottom;
 
-@keyframes dot-x {
-  0% {
-    transform: translateX(100vw);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes dot-y {
-  0% {
-    translate: 0 150px;
-  }
-
-  45% {
-    translate: 0 -220px;
-  }
-
-  75% {
-    translate: 0 -80px;
-  }
-
-  82% {
-    translate: 0 0;
-  }
-
-  /* bounce */
-  88% {
-    translate: 0 -18px;
-  }
-
-  93% {
-    translate: 0 0;
-  }
-
-  97% {
-    translate: 0 -6px;
-  }
-
-  100% {
-    translate: 0 0;
-  }
 }
 
 

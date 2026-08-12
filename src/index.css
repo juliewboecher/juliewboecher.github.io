@@ -112,12 +112,99 @@ a {
 
 
 
+.animated-dot {
+  display: inline-block;
+  position: relative;
+  z-index: 1001;
+  animation: dot-bounce 2.2s linear forwards;
+  transform-origin: center bottom;
+}
+
+.animated-dot {
+  display: inline-block;
+  position: relative;
+  z-index: 1001;
+  animation: dot-bounce 2.2s linear forwards;
+  transform-origin: center bottom;
+}
+
+@keyframes dot-bounce {
+  /* Starter helt oppe over siden/navbaren */
+  0% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+
+  /* Hurtigt fald ned */
+  42% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  /* Rammer */
+  43% {
+    transform: translateY(3px) scale(1.2, 0.8);
+  }
+
+  /* Første bounce */
+  57% {
+    transform: translateY(-125px) scale(1);
+  }
+
+  /* Ned igen */
+  68% {
+    transform: translateY(0) scale(1);
+  }
+
+  /* Andet impact */
+  69% {
+    transform: translateY(2px) scale(1.12, 0.88);
+  }
+
+  /* Andet bounce */
+  79% {
+    transform: translateY(-77px) scale(1);
+  }
+
+  /* Ned igen */
+  87% {
+    transform: translateY(0) scale(1);
+  }
+
+  /* Tredje impact */
+  88% {
+    transform: translateY(1px) scale(1.07, 0.93);
+  }
+
+  /* Sidste lille bounce */
+  94% {
+    transform: translateY(-15px) scale(1, 0.8);
+  }
+
+  /* Landet */
+  97% {
+    transform: translateY(0) scale(1.03, 0.97);
+  }
+
+  /* Helt stille */
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
 
 
+@media (max-width: 720px) {
+  .hero-section h1 {
+    position: relative;
+  }
 
-
-
-
+  .animated-dot {
+    position: absolute;
+    right: -305px;
+    bottom: 0px;
+  }
+}
 
 
 
