@@ -26,3 +26,29 @@
 .about-hero-image {
   width: 400px;
 }
+
+.about-hero-text {
+  padding: 0rem;
+}
+
+@media (max-width: 720px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero-text {
+    margin-top: 0rem;
+  }
+
+  .about-me-image {
+    width: 100%;
+  }
+
+  .about-hero-image {
+    width: 100%;
+  }
+  .about-hero-text p {
+    margin-top: 0rem;
+  }
+}

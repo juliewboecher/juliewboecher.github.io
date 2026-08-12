@@ -53,7 +53,10 @@ function ProjectPage() {
       </Link>
 
       {/* Projekt information */}
-      <p>{project.year}</p>
+      <div className="eyebrow-container">
+        <p className="eyebrow">{project.year}</p>
+        <p className="eyebrow">{project.type}</p>
+      </div>
 
       <h1 className="detail-title">{project.title}</h1>
 
@@ -67,16 +70,10 @@ function ProjectPage() {
 
       {/* Hero billede */}
       <div className="detail-hero-image">
-  {project.image && (
-    <img
-      className="detail-hero-img"
-      src={project.image}
-      alt=""
-    />
-  )}
-</div>
-
-     
+        {project.image && (
+          <img className="detail-hero-img" src={project.image1} alt="" />
+        )}
+      </div>
 
       {/* Links */}
       <div className="actions">
@@ -95,26 +92,41 @@ function ProjectPage() {
 
       {/* Processbeskrivelse */}
       <section className="detail-text-section">
-        <h2>Processbeskrivelse</h2>
-
         <p className="lead">{project.description}</p>
       </section>
 
       {/* Projektets process / billeder */}
       <section className="project-process">
+        {project.image2 && (
+          <div className="process-row reverse">
+            <div className="process-image">
+              <img
+                ref={(el) => (imagesRef.current[0] = el)}
+                src={project.image2}
+                alt=""
+              />
+            </div>
+
+            <div className="process-text">
+              <h3 className="project-title">{project.title3}</h3>
+              <p>{project.description3}</p>
+            </div>
+          </div>
+        )}
+
         {/* Billede 3 - venstre */}
         {project.image3 && (
           <div className="process-row">
             <div className="process-image">
               <img
-                ref={(el) => (imagesRef.current[0] = el)}
+                ref={(el) => (imagesRef.current[1] = el)}
                 src={project.image3}
                 alt=""
               />
             </div>
 
             <div className="process-text">
-              <h3>{project.title2}</h3>
+              <h3 className="project-title">{project.title2}</h3>
               <p> {project.description2}</p>
             </div>
           </div>
@@ -125,14 +137,14 @@ function ProjectPage() {
           <div className="process-row reverse">
             <div className="process-image">
               <img
-                ref={(el) => (imagesRef.current[1] = el)}
+                ref={(el) => (imagesRef.current[2] = el)}
                 src={project.image4}
                 alt=""
               />
             </div>
 
             <div className="process-text">
-              <h3>{project.title3}</h3>
+              <h3 className="project-title">{project.title3}</h3>
               <p>{project.description3}</p>
             </div>
           </div>
@@ -143,14 +155,14 @@ function ProjectPage() {
           <div className="process-row">
             <div className="process-image">
               <img
-                ref={(el) => (imagesRef.current[2] = el)}
+                ref={(el) => (imagesRef.current[3] = el)}
                 src={project.image5}
                 alt=""
               />
             </div>
 
             <div className="process-text">
-              <h3>{project.title4}</h3>
+              <h3 className="project-title">{project.title4}</h3>
               <p>{project.description4}</p>
             </div>
           </div>
@@ -161,14 +173,14 @@ function ProjectPage() {
           <div className="process-row reverse">
             <div className="process-image">
               <img
-                ref={(el) => (imagesRef.current[3] = el)}
+                ref={(el) => (imagesRef.current[4] = el)}
                 src={project.image6}
                 alt=""
               />
             </div>
 
             <div className="process-text">
-              <h3>{project.title5}</h3>
+              <h3 className="project-title">{project.title5}</h3>
               <p>{project.description5}</p>
             </div>
           </div>
@@ -179,18 +191,15 @@ function ProjectPage() {
           <div className="process-row">
             <div className="process-image">
               <img
-                ref={(el) => (imagesRef.current[4] = el)}
+                ref={(el) => (imagesRef.current[5] = el)}
                 src={project.image7}
                 alt=""
               />
             </div>
 
             <div className="process-text">
-              <h3>Resultat</h3>
-              <p>
-                Her kan du beskrive det færdige resultat og dine vigtigste
-                refleksioner.
-              </p>
+              <h3 className="project-title">{project.title6}</h3>
+              <p>{project.description6}</p>
             </div>
           </div>
         )}

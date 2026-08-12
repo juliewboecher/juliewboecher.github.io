@@ -1,6 +1,6 @@
 
 .page {
-  width: min(100% - 4rem, 1200px);
+  width: min(calc(100% - 4rem), 1200px);
   margin: 0 auto;
   padding: 7rem 0 5rem;
 }
@@ -59,9 +59,6 @@
 }
 
 .read-more-button {
-  position: relative;
-  display: flex;
-  justify-content: end;
   position: absolute;
   right: 200px;
   top: 500px;
@@ -70,9 +67,8 @@
 
 .read-more-image {
   display: block;
-  margin: 0 auto;
-   width: 50px;
-  display: block;
+  width: 50px;
+  height: auto;
   animation: bounce 2.5s ease-in-out infinite;
 }
 
@@ -178,17 +174,6 @@
   font-weight: 700;
 }
 
-@media (max-width: 720px) {
-  .page {
-    padding-top: 2rem;
-  }
-
-  .hero-section {
-    min-height: auto;
-    padding-top: 2rem;
-  }
-}
-
 .about-section {
   padding: 4rem 0;
 }
@@ -204,10 +189,123 @@
   justify-content: space-between;
 }
 
-.about-hero-text {
+.home-about-text {
   padding: 2rem;
 }
 
 .about-hero p {
   margin-top: 7rem;
+}
+
+
+.animated-dot {
+  display: inline-block;
+  animation:
+    dot-x 1.8s linear forwards,
+    dot-y 1.8s cubic-bezier(0.45, 0, 0.55, 1) forwards;
+}
+
+@keyframes dot-x {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dot-y {
+  0% {
+    translate: 0 150px;
+  }
+
+  45% {
+    translate: 0 -220px;
+  }
+
+  75% {
+    translate: 0 -80px;
+  }
+
+  82% {
+    translate: 0 0;
+  }
+
+  /* bounce */
+  88% {
+    translate: 0 -18px;
+  }
+
+  93% {
+    translate: 0 0;
+  }
+
+  97% {
+    translate: 0 -6px;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+
+
+@media (max-width: 720px) {
+  .hero-section h1 {
+    font-size: 4rem;
+    max-width: 70px;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .read-more-button {
+    position: absolute;
+    right: 1rem;
+    left: auto;
+    top: auto;
+    bottom: 3rem;
+    width: 30px;
+    transform: none;
+  }
+
+  .read-more-image {
+    width: 40px;
+    height: auto;
+  }
+   .about-hero-text {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .about-hero-text p {
+    margin-top: 0rem;
+  }
+  .home-about-text {
+  padding: 0rem;
+}
 }

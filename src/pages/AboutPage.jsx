@@ -6,7 +6,7 @@ function AboutPage() {
       <p className="eyebrow-heading">Om mig</p>
 
       <div className="about-hero">
-        <div>
+        <div className="about-hero-text">
           <h1>Hvem er jeg?</h1>
           <p>
             Jeg er en passioneret udvikler med fokus på at skabe brugervenlige og

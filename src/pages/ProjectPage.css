@@ -5,11 +5,14 @@
   box-sizing: border-box;
 }
 
-
 /* =========================
    BUTTONS
 ========================= */
-
+.project-title {
+  font-family: 'Chango', sans-serif;
+  font-size: 2rem;
+  color: #B31619;
+}
 .button {
   display: inline-flex;
   align-items: center;
@@ -193,48 +196,23 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+.eyebrow-container {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
 
-@media (max-width: 768px) {
-
-  .page-narrow {
-    width: min(100% - 2rem, 1200px);
-    padding: 4rem 0;
-  }
-
-  .detail-title {
-    font-size: 2.25rem;
-  }
-
-  .detail-hero-image {
-    justify-content: center;
-  }
-
-  .detail-hero-img {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .project-process {
-    gap: 5rem;
-    margin: 5rem 0;
-  }
-
-  .process-row,
-  .process-row.reverse {
+@media (max-width: 720px) {
+  .process-row {
     grid-template-columns: 1fr;
-    direction: ltr;
-    gap: 2rem;
   }
 
-  .process-row.reverse > * {
-    direction: ltr;
+  .process-row.reverse .process-image {
+    grid-column: 1;
   }
 
-  .process-text {
-    max-width: none;
+  .process-row.reverse .process-text {
+    grid-column: 1;
+    grid-row: 2;
   }
-
 }
