@@ -32,3 +32,10 @@
   width: 50px;
   display: block;
 }
+
+@media (max-width: 720px) {
+  .page-narrow {
+    width: calc(100% - 2rem);
+    padding: 7rem 0;
+  }
+}
