@@ -52,7 +52,8 @@ const projects = [
     tags: ["Performanceanalyse", "Branding", "Videoredigering"],
     title2: "Mit arbejde på Café Smagløs",
     title25: " - Vince, driftschef på Café Smagløs",
-    description2: "“Siden januar har Julie og jeg arbejdet tæt sammen om at skabe et nyt fundament for Café Smagløs' digitale tilstedeværelse og har været med til at udvikle den retning og det visuelle udtryk, vi ønsker for vores sociale platforme. Det er stadig en proces med masser af udvikling og læring, men der er allerede sket meget, og retningen begynder for alvor at tage form.”",
+    description2:
+      "“Siden januar har Julie og jeg arbejdet tæt sammen om at skabe et nyt fundament for Café Smagløs' digitale tilstedeværelse. Julie arbejder med indhold til blandt andet opslag, reels og stories og har været med til at udvikle den retning og det visuelle udtryk, vi ønsker for vores sociale platforme. Det er stadig en proces med masser af udvikling og læring, men der er allerede sket meget, og retningen begynder for alvor at tage form.”",
     title3: "Kommunikation og planlægning",
     description3:
       "I mit arbejde som SoMe Manager, planlægger jeg, i dialog med Café Smagløs driftschef, hvad og hvornår indhold deles. Jeg er komfortabel i at have en stor del af ansvaret i planlægningen og eksekveringen.",
@@ -120,7 +121,7 @@ const projects = [
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
-    tags: ["Photoshop", "Fotografering", "Collage"],
+    tags: ["", "Fotografering", "Collage"],
     title2: "Adobe Premiere Pro",
     description2:
       "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",

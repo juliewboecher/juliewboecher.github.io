@@ -152,8 +152,12 @@
   width: 100%;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
+  align-items: space-between;
   gap: 4rem;
+}
+
+.process-text {
+  width: 600px;
 }
 
 .process-row.reverse .process-image {

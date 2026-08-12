@@ -109,7 +109,7 @@ function ProjectPage() {
 
             <div className="process-text">
               <h3 className="project-title">{project.title2}</h3>
-              <p>{project.description2}</p>
+              <p className="project-description">{project.description2}</p>
               <p className="project-title25">{project.title25}</p>
             </div>
           </div>
