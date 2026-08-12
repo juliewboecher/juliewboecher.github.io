@@ -1,21 +1,23 @@
 const projects = [
   {
-    slug: "Webapp-projekt",
-    title: "Webapp projekt",
+    slug: "Gemly",
+    title: "Gemly, app for skjulte perler",
     year: "2026",
     type: "Skole",
-    summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
-    description:
+    summary:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
+    description:
+      "Det kan hurtigt blive til mange timers research og organisering, før de faktisk finder de steder, de ender med at besøge. Det har vi forsøgt at løse med Gemly. En webapp som samler søgning og filtrering, organisering af fundne steder, rutevejledning og deling af de skjulte perler, de selv finder.",
     tags: ["React", "UX/UI Design", "GitHub Pages"],
-    title2: "Adobe Premiere Pro",
+    title2: "Moodboard",
     description2:
-      "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
-    title3: "Reel",
-    description3: "Beskriv hvordan du har brugt Reel i projektet.",
-    title4: "Flow",
+      "Beskriv hvordan du har bruDisse ord har dannet grund for appens stemning og Tone of Voice. Gemly er fri, udforskende og gemt, fordi vi taler til nysgerrige mennesker, som holder af at finde skjulte perler. Gemly er jordnær og autentisk, fordi brugerne selv skaber indhold i appen, som de møder verden på deres rejser",
+    title3: "Visuel brand identitet",
+    description3:
+      "For at danne en rød tråd, ensartethed og genkendeligt design, har appens ikoner bløde kanter og det samme stilrene design, som binder dem sammen.",
+    title4: "Tone of voice",
     description4: "Beskriv hvordan du har brugt Flow i projektet.",
-    title5: "Udvikling",
+    title5: "Animationer",
     description5: "Beskriv hvordan du har brugt Flow i projektet.",
     title6: "Resultat",
     description6: "Beskriv hvordan du har brugt Flow i projektet.",

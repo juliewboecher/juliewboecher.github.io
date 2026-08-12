@@ -92,7 +92,7 @@ function ProjectPage() {
 
       {/* Processbeskrivelse */}
       <section className="detail-text-section">
-        <p className="lead">{project.description}</p>
+        <p>{project.description}</p>
       </section>
 
       {/* Projektets process / billeder */}
@@ -108,8 +108,8 @@ function ProjectPage() {
             </div>
 
             <div className="process-text">
-              <h3 className="project-title">{project.title3}</h3>
-              <p>{project.description3}</p>
+              <h3 className="project-title">{project.title2}</h3>
+              <p>{project.description2}</p>
             </div>
           </div>
         )}
@@ -126,8 +126,8 @@ function ProjectPage() {
             </div>
 
             <div className="process-text">
-              <h3 className="project-title">{project.title2}</h3>
-              <p> {project.description2}</p>
+              <h3 className="project-title">{project.title3}</h3>
+              <p> {project.description3}</p>
             </div>
           </div>
         )}
@@ -144,8 +144,8 @@ function ProjectPage() {
             </div>
 
             <div className="process-text">
-              <h3 className="project-title">{project.title3}</h3>
-              <p>{project.description3}</p>
+              <h3 className="project-title">{project.title4}</h3>
+              <p>{project.description4}</p>
             </div>
           </div>
         )}
@@ -162,8 +162,8 @@ function ProjectPage() {
             </div>
 
             <div className="process-text">
-              <h3 className="project-title">{project.title4}</h3>
-              <p>{project.description4}</p>
+              <h3 className="project-title">{project.title5}</h3>
+              <p>{project.description5}</p>
             </div>
           </div>
         )}
@@ -180,8 +180,8 @@ function ProjectPage() {
             </div>
 
             <div className="process-text">
-              <h3 className="project-title">{project.title5}</h3>
-              <p>{project.description5}</p>
+              <h3 className="project-title">{project.title6}</h3>
+              <p>{project.description6}</p>
             </div>
           </div>
         )}
@@ -198,8 +198,8 @@ function ProjectPage() {
             </div>
 
             <div className="process-text">
-              <h3 className="project-title">{project.title6}</h3>
-              <p>{project.description6}</p>
+              <h3 className="project-title">{project.title7}</h3>
+              <p>{project.description7}</p>
             </div>
           </div>
         )}
