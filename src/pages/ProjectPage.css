@@ -1,3 +1,19 @@
+.detail-hero-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 2rem;
+}
+
+.detail-hero-img {
+  display: block;
+  width: 60%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
 .process-phases {
  display: grid;
  grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -126,12 +142,75 @@
     grid-template-columns: 1fr;
   }
 
-  .process-row {
-   
-    align-items: flex-start;
+  .detail-hero-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.75rem;
+  }
+  .detail-title {
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
-  .process-image {
-    width: 100%;
+  .detail-title + p {
+    font-size: 0.95rem;
+  }
+
+  .process-text p {
+    font-size: 0.95rem;
+  }
+
+  .process-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  
+}
+
+@media (max-width: 720px) {
+  .process-phases {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin: 3rem 0;
+  }
+
+  .phase-card {
+    min-height: auto;
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .phase-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .phase-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+ @media (max-width: 720px) {
+  .process-row,
+  .process-row.reverse {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .process-row .process-image,
+  .process-row.reverse .process-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .process-row .process-text,
+  .process-row.reverse .process-text {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
   }
 }

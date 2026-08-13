@@ -210,20 +210,24 @@
 
 
 @media (max-width: 720px) {
-   
 
    .hero-section {
-    min-height: 75svh;
-    padding: 2rem 0;
-  }
+     padding: 0rem 0;
+     margin-bottom: 2rem;
+     margin-top: 10rem;
+   }
 
   .hero-information {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 
   .hero-section h1 {
     width: 100%;
+    padding: 0;
+  }
+
+  .eyebrow-heading {
     padding: 0;
   }
 
