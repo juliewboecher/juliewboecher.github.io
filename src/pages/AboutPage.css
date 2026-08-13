@@ -1,11 +1,11 @@
 .page-narrow {
-  width: min(100% - 4rem, 1200px);
+  width: min(100% - 2rem, 1200px);
   margin: 0 auto;
   padding: 7rem 0rem;
 }
 
 .drawing-image {
-  width: 600px;
+  width: min(100%, 500px);
   object-fit: cover;
 }
 
@@ -20,11 +20,11 @@
 }
 
 .about-me-image {
-  width: 800px;
+  width: min(100%, 500px);
 }
 
 .about-hero-image {
-  width: 400px;
+  width: min(100%, 500px);
 }
 
 .about-hero-text {

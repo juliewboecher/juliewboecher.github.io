@@ -115,13 +115,13 @@ const projects = [
   },
   {
     slug: "Story Hangers",
-    title: "Story Hangers",
+    title: "Story Hangers, Konceptudvikling af retail tøjbrand",
     year: "2026",
     type: "Skole",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
     description:
       "Portfolioen viser udvalgte projekter og fungerer som et udgangspunkt for at arbejde med komponenter, routing, styling og deployment.",
-    tags: ["", "Fotografering", "Collage"],
+    tags: ["CX Design", "Brandidentitet", "Konceptudvikling"],
     title2: "Adobe Premiere Pro",
     description2:
       "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
@@ -183,7 +183,7 @@ const projects = [
   },
   {
     slug: "Spilscafeen",
-    title: "Spilscaféen",
+    title: "Re-design af Spilscaféen",
     year: "2025",
     type: "Skole",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",

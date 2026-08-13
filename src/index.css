@@ -31,8 +31,8 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -201,9 +201,24 @@ a {
 
   .animated-dot {
     position: absolute;
-    right: -305px;
+    right: clamp(-40px, 0vw, -20px);
     bottom: 0px;
   }
+}
+
+/* Tablet / mindre laptops */
+@media (max-width: 900px) {
+  
+}
+
+/* Telefon */
+@media (max-width: 720px) {
+  
+}
+
+/* Meget små telefoner */
+@media (max-width: 400px) {
+  
 }
 
 
