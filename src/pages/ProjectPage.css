@@ -1,228 +1,137 @@
-.page-narrow {
-  width: min(100% - 2rem, 1200px);
-  margin: 0 auto;
-  padding: 7rem 0;
-  box-sizing: border-box;
-}
+.process-phases {
+ display: grid;
+ grid-template-columns: repeat(4, minmax(0, 1fr));
+ gap: 1rem;
 
-/* =========================
-   BUTTONS
-========================= */
-.project-title {
-  font-family: 'Chango', sans-serif;
-  font-size: 2rem;
-  color: #B31619;
-}
 
-.detail-text-section {
-  width: 100%;
-}
+ width: 100%;
+ max-width: 100%;
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.75rem;
-  border-radius: 999px;
-  color: #ffffff;
-  background: #180B0B;
-  padding: 0.7rem 1rem;
-  font-weight: 700;
-  text-decoration: none;
+
+ margin: 8rem 0;
+
+
+ min-width: 0;
 }
 
 
-/* =========================
-   BACK LINK
-========================= */
-
-.back-link {
-  display: inline-flex;
-  margin-bottom: 1.5rem;
-  color: #180B0B;
-  font-weight: 800;
-}
-
-.back-link:hover,
-.back-link:active {
-  color: #B31619;
-}
+.phase-card {
+ padding: 2rem;
 
 
-/* =========================
-   HERO
-========================= */
+ border: 1px solid #180B0B;
+ border-radius: 1rem;
 
-.detail-hero {
-  display: flex;
-  margin-bottom: 2rem;
-}
 
-.detail-hero-image {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 2rem;
-}
+ min-height: 250px;
+ min-width: 0;
 
-.detail-hero-img {
-  width: 600px;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
-.detail-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+ display: flex;
+ flex-direction: column;
+
+
+ box-sizing: border-box;
 }
 
 
-/* =========================
-   EXTRA IMAGE
-========================= */
+.phase-card h3 {
+ margin: 0 0 2rem;
 
-.detail-image {
-  display: block;
-  width: 300px;
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 0.75rem;
-  object-fit: cover;
+
+ font-family: 'Chango', sans-serif;
+ font-size: 1.5rem;
+
+
+ color: #B31619;
 }
 
 
-/* =========================
-   PROCESS DESCRIPTION
-========================= */
+.phase-card p {
+ margin: 0;
 
-.detail-text-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+
+ line-height: 1.6;
+
+
+ overflow-wrap: break-word;
 }
 
-
-/* =========================
-   TAGS
-========================= */
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0;
-  margin: 1.25rem 0;
-  list-style: none;
-}
-
-.tag-list li {
-  border: 1px solid #B31619;
-  border-radius: 999px;
-  color: #475569;
-  padding: 0.35rem 0.7rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-
-/* =========================
-   ACTION BUTTONS
-========================= */
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
 
 .project-process {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
-  margin: 8rem 0;
+  gap: 2rem;
 }
 
 .process-row {
-  width: 100%;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: space-between;
-  gap: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.process-text {
-  width: 600px;
-}
-
-.process-row.reverse .process-image {
-  grid-column: 2;
-}
-
-.process-row.reverse .process-text {
-  grid-column: 1;
-  grid-row: 1;
+.process-row.reverse {
+  flex-direction: row-reverse;
 }
 
 .process-image {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .process-image img {
-  display: block;
   width: 100%;
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 0.75rem;
-
-  opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.process-row:not(.reverse) .process-image img {
-  transform: translateX(-50px);
-}
-
-.process-row.reverse .process-image img {
-  transform: translateX(50px);
-}
-
-.process-image img.show {
-  opacity: 1;
-  transform: translateX(0);
+  height: auto;
+  display: block;
 }
 
 .process-text {
-  max-width: 500px;
+  flex: 2;
 }
 
-
-.eyebrow-container {
-  display: flex;
-  gap: 1rem;
-  margin: 0;
+.project-title {
+  font-size: 2rem;
+  margin: 0.5rem 0;
 }
 
-@media (max-width: 720px) {
-  .process-row {
+.project-description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-description2 {
+  margin: 0.5rem 0;
+}
+
+.button {
+  background-color: #180B0B;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: #180B0B;
+  border: 1px solid #180B0B;
+}
+
+@media (max-width: 768px) {
+  .process-phases {
     grid-template-columns: 1fr;
   }
 
-  .process-row.reverse .process-image {
-    grid-column: 1;
+  .process-row {
+   
+    align-items: flex-start;
   }
 
-  .process-row.reverse .process-text {
-    grid-column: 1;
-    grid-row: 2;
+  .process-image {
+    width: 100%;
   }
 }

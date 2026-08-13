@@ -67,3 +67,25 @@
     width: 75px;
   }
 }
+
+@media (max-width: 480px) {
+  .site-header {
+    
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .site-nav {
+    justify-content: center;
+    gap: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  .site-nav a {
+    padding: 0.3rem 0.4rem;
+  }
+
+  .site-header img {
+    width: 60px;
+  }
+}

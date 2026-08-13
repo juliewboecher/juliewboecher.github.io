@@ -192,8 +192,9 @@ a {
   .hero-section h1 {
     position: relative;
   }
-
-  
+  .page-narrow {
+    padding: 0 0rem;
+  }
 }
 
 /* Tablet / mindre laptops */

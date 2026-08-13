@@ -19,15 +19,23 @@ function AboutPage() {
           className="drawing-image"
         />
       </div>
+
+      <section className="about-facts">
+        <h2></h2>
+          <p>Til dagligt læser til Multimediedesigner på Erhvervsakademi Aarhus</p>
+          <p>Som studiejob arbejder som Social Media Manager for Café Smagløs</p>
+          <p>I min fritid...</p>
+      </section>
+
       <section className="info-list" aria-label="Om mig detaljer">
-        <div>
-          <h2>Jeg arbejder med</h2>
+        <div className="info-card">
+          <h2 className="info-card-title">Jeg arbejder med</h2>
           <p>
             React, HTML, CSS, JavaScript, designproces og digitale produkter.
           </p>
         </div>
-        <div>
-          <h2>Jeg er nysgerrig på</h2>
+        <div className="info-card">
+          <h2 className="info-card-title">Jeg er nysgerrig på</h2>
           <p>
             Brugeroplevelser, visuel identitet og hvordan kode bliver til noget
             brugbart.

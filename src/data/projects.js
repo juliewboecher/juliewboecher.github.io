@@ -11,24 +11,28 @@ const projects = [
     tags: ["React", "UX/UI Design", "GitHub Pages"],
     title2: "Moodboard",
     description2:
-      "Beskriv hvordan du har bruDisse ord har dannet grund for appens stemning og Tone of Voice. Gemly er fri, udforskende og gemt, fordi vi taler til nysgerrige mennesker, som holder af at finde skjulte perler. Gemly er jordnær og autentisk, fordi brugerne selv skaber indhold i appen, som de møder verden på deres rejser",
-    title3: "Visuel brand identitet",
+      " Dette har hjulpet os med at identificere områder, der kræver forbedring, og har givet os værdifuld feedback til den videre udvikling.Beskriv hvordan du har bruDisse ord har dannet grund for appens stemning og Tone of Voice. Gemly er fri, udforskende og gemt, fordi vi taler til nysgerrige mennesker, som holder af at finde skjulte perler. Gemly er jordnær og autentisk, fordi brugerne selv skaber indhold i appen, som de møder verden på deres rejser",
+    title3: "Brugertests",
     description3:
+      "Vi har gennemført brugertests for at få indsigt i, hvordan vores målgruppe interagerer med appen.",
+    title4: "Visuel brand identitet",
+    description4:
       "For at danne en rød tråd, ensartethed og genkendeligt design, har appens ikoner bløde kanter og det samme stilrene design, som binder dem sammen.",
-    title4: "Tone of voice",
-    description4: "Beskriv hvordan du har brugt Flow i projektet.",
-    title5: "Animationer",
-    description5: "Beskriv hvordan du har brugt Flow i projektet.",
-    title6: "Resultat",
+    title5: "Tone of voice",
     description6: "Beskriv hvordan du har brugt Flow i projektet.",
+    title6: "Animationer",
+    description7: "Beskriv hvordan du har brugt Flow i projektet.",
+    title8: "Resultat",
+    description8: "Beskriv hvordan du har brugt Flow i projektet.",
     image: `${import.meta.env.BASE_URL}gemlymock.png`,
     image1: `${import.meta.env.BASE_URL}gemlymock.png`,
     image2: `${import.meta.env.BASE_URL}gemlymoodboard.png`,
-    image3: `${import.meta.env.BASE_URL}gemlyikoner.svg`,
-    image4: `${import.meta.env.BASE_URL}gemlylogoskitser.svg`,
-    image5: `${import.meta.env.BASE_URL}gemlynameskitser.svg`,
-    image6: `${import.meta.env.BASE_URL}gemlysave.gif`,
-    image7: `${import.meta.env.BASE_URL}gemlynavbar.svg`,
+    image3: `${import.meta.env.BASE_URL}gemlyuserneeds.png`,
+    image4: `${import.meta.env.BASE_URL}gemlyikoner.svg`,
+    image5: `${import.meta.env.BASE_URL}gemlylogoskitser.svg`,
+    image6: `${import.meta.env.BASE_URL}gemlynameskitser.svg`,
+    image7: `${import.meta.env.BASE_URL}gemlysave.gif`,
+    image8: `${import.meta.env.BASE_URL}gemlynavbar.svg`,
     links: [
       {
         label: "Live site",
@@ -39,6 +43,17 @@ const projects = [
         href: "https://github.com/mamelishah/gemly-project-webapplication",
       },
     ],
+    processPhases: {
+      discover: "Brainstorm emne, Undersøgt målgruppe, HMW, Card Sorting.",
+
+      define:
+        "Definere målgruppe, User needs og user stories, Flows, VPC, OOUX, Koncept.",
+
+      develop:
+        "Brugertest af koncept, Lo-fi skitser af layout, Skitser i Figma, Test af Figma skitseret prototype, Heuristisk evaluering.",
+
+      deliver: "Figma Prototype, Programmering, Finpudsning af løsning.",
+    },
   },
   {
     slug: "SoMe-Manager",
@@ -76,6 +91,7 @@ const projects = [
         href: "https://www.instagram.com/cafesmaglos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
     ],
+    
   },
   {
     slug: "Surrealistisk-Collage",
@@ -146,6 +162,17 @@ const projects = [
         href: "https://github.com/juliewboecher/customer-experience-exam",
       },
     ],
+    processPhases: {
+      discover: "Brainstorm emne, Undersøgt målgruppe, HMW, Card Sorting.",
+
+      define:
+        "Definere målgruppe, User needs og user stories, Flows, VPC, OOUX, Koncept.",
+
+      develop:
+        "Brugertest af koncept, Lo-fi skitser af layout, Skitser i Figma, Test af Figma skitseret prototype, Heuristisk evaluering.",
+
+      deliver: "Figma Prototype, Programmering, Finpudsning af løsning.",
+    },
   },
   {
     slug: "Lumina One",
@@ -180,6 +207,17 @@ const projects = [
         href: "https://github.com/username/username.github.io",
       },
     ],
+    processPhases: {
+      discover: "Brainstorm emne, Undersøgt målgruppe, HMW, Card Sorting.",
+
+      define:
+        "Definere målgruppe, User needs og user stories, Flows, VPC, OOUX, Koncept.",
+
+      develop:
+        "Brugertest af koncept, Lo-fi skitser af layout, Skitser i Figma, Test af Figma skitseret prototype, Heuristisk evaluering.",
+
+      deliver: "Figma Prototype, Programmering, Finpudsning af løsning.",
+    },
   },
   {
     slug: "Spilscafeen",
@@ -214,6 +252,17 @@ const projects = [
         href: "https://github.com/username/username.github.io",
       },
     ],
+    processPhases: {
+      discover: "Brainstorm emne, Undersøgt målgruppe, HMW, Card Sorting.",
+
+      define:
+        "Definere målgruppe, User needs og user stories, Flows, VPC, OOUX, Koncept.",
+
+      develop:
+        "Brugertest af koncept, Lo-fi skitser af layout, Skitser i Figma, Test af Figma skitseret prototype, Heuristisk evaluering.",
+
+      deliver: "Figma Prototype, Programmering, Finpudsning af løsning.",
+    },
   },
 ];
 
