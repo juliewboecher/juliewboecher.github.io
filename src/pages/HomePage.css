@@ -2,7 +2,7 @@
 .page {
   width: min(100% - 2rem, 1200px);
   margin: 0 auto;
-  padding: 7rem 0 5rem;
+  padding: clamp(1.5rem, 6vw, 7rem) 0 5rem;
 }
 
 .hero-section {
@@ -15,16 +15,18 @@
   position: relative;
   z-index: 1;
 
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: clamp(0.5rem, 2vw, 3rem);
+  margin-bottom: clamp(0.5rem, 2vw, 3rem);
 }
 
 .hero-section h1 {
-  font-size: clamp(3.5rem, 12vw, 7rem);
+  position: relative;
 }
 
 .hero-section h2 {
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .hero-section p {
@@ -210,13 +212,14 @@
 @media (max-width: 720px) {
    
 
-  .hero-information {
-    width: 100%;
+   .hero-section {
+    min-height: 75svh;
+    padding: 2rem 0;
   }
 
-   .hero-section {
-    width: 100%;
-    min-height: auto;
+  .hero-information {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .hero-section h1 {
@@ -224,8 +227,9 @@
     padding: 0;
   }
 
-  .hero-section h2 {
-    font-size: clamp(1.4rem, 5vw, 2rem);
+   .hero-section h2 {
+    font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+    line-height: 1.2;
   }
 
   .hero-section p {

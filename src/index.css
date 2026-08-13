@@ -112,20 +112,14 @@ a {
 
 
 
-.animated-dot {
-  display: inline-block;
-  position: relative;
-  z-index: 1001;
-  animation: dot-bounce 2.2s linear forwards;
-  transform-origin: center bottom;
-}
+
 
 .animated-dot {
   display: inline-block;
+  margin-left: 0;
   position: relative;
   z-index: 1001;
   animation: dot-bounce 2.2s linear forwards;
-  transform-origin: center bottom;
 }
 
 @keyframes dot-bounce {
@@ -199,11 +193,7 @@ a {
     position: relative;
   }
 
-  .animated-dot {
-    position: absolute;
-    right: clamp(-40px, 0vw, -20px);
-    bottom: 0px;
-  }
+  
 }
 
 /* Tablet / mindre laptops */
