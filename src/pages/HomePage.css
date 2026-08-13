@@ -9,6 +9,7 @@
   position: relative;
   width: 100vw;
   min-height: 58svh;
+  
 }
 
 .hero-information {
@@ -70,6 +71,10 @@
   width: 50px;
   height: auto;
   animation: bounce 2.5s ease-in-out infinite;
+}
+
+.hero-actions {
+  margin-top: 10rem;
 }
 
 @keyframes bounce {
