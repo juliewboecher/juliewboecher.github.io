@@ -1,8 +1,8 @@
 
 .page {
-  width: min(calc(100% - 4rem), 1200px);
+  width: min(100% - 2rem, 1200px);
   margin: 0 auto;
-  padding: 7rem 0 5rem;
+  padding: clamp(1.5rem, 6vw, 7rem) 0 5rem;
 }
 
 .hero-section {
@@ -15,23 +15,23 @@
   position: relative;
   z-index: 1;
 
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: clamp(0.5rem, 2vw, 3rem);
+  margin-bottom: clamp(0.5rem, 2vw, 3rem);
 }
 
 .hero-section h1 {
-  font-size: 7rem;
-  width: 100%;
+  position: relative;
 }
 
 .hero-section h2 {
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .hero-section p {
-  font-size: 1.5rem;
-  max-width: 600px;
-  margin-top: 1rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  width: min(100%, 600px);
 }
 
 .hero-text,
@@ -210,17 +210,35 @@
 
 
 @media (max-width: 720px) {
-  .hero-section h1 {
-    font-size: 4rem;
-    max-width: 70px;
+
+   .hero-section {
+     padding: 0rem 0;
+     margin-bottom: 2rem;
+     margin-top: 10rem;
+   }
+
+  .hero-information {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
 
-  .hero-section h2 {
-    font-size: 1.5rem;
+  .hero-section h1 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .eyebrow-heading {
+    padding: 0;
+  }
+
+   .hero-section h2 {
+    font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+    line-height: 1.2;
   }
 
   .hero-section p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    width: 100%;
   }
 
   .hero-image {

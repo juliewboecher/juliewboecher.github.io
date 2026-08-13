@@ -1,12 +1,12 @@
 
 .page-narrow {
-  width: min(100% - 4rem, 1200px);
+  width: min(100% - 2rem, 1200px);
   margin: 0 auto;
   padding: 7rem 0rem;
 }
 
 .lead {
-  max-width: 680px;
+  width: min(100%, 500px);
   font-size: 1.15rem;
   margin-bottom: 20px;
 }
@@ -29,7 +29,7 @@
 }
 
 .footer-icon {
-  width: 50px;
+  width: min(100%, 500px);
   display: block;
 }
 

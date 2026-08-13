@@ -8,10 +8,9 @@ function HomePage() {
 
   return (
     <div className="page">
-      <p className="eyebrow-heading">Portfolio</p>
-
       <section className="hero-section">
         <div className="hero-information">
+          <p className="eyebrow-heading">Portfolio</p>
           <h2 className="hero-text">
             Mit navn er Julie Wendelboe Bøcher, & jeg er
           </h2>

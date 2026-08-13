@@ -31,8 +31,8 @@ a {
 }
 
 img {
-  display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button,
@@ -112,20 +112,14 @@ a {
 
 
 
-.animated-dot {
-  display: inline-block;
-  position: relative;
-  z-index: 1001;
-  animation: dot-bounce 2.2s linear forwards;
-  transform-origin: center bottom;
-}
+
 
 .animated-dot {
   display: inline-block;
+  margin-left: 0;
   position: relative;
   z-index: 1001;
   animation: dot-bounce 2.2s linear forwards;
-  transform-origin: center bottom;
 }
 
 @keyframes dot-bounce {
@@ -198,12 +192,24 @@ a {
   .hero-section h1 {
     position: relative;
   }
-
-  .animated-dot {
-    position: absolute;
-    right: -305px;
-    bottom: 0px;
+  .page-narrow {
+    padding-top: 1rem;
   }
+}
+
+/* Tablet / mindre laptops */
+@media (max-width: 900px) {
+  
+}
+
+/* Telefon */
+@media (max-width: 720px) {
+  
+}
+
+/* Meget små telefoner */
+@media (max-width: 400px) {
+  
 }
 
 

@@ -1,11 +1,11 @@
 .page-narrow {
-  width: min(100% - 4rem, 1200px);
+  width: min(100% - 2rem, 1200px);
   margin: 0 auto;
   padding: 7rem 0rem;
 }
 
 .drawing-image {
-  width: 600px;
+  width: min(100%, 500px);
   object-fit: cover;
 }
 
@@ -20,15 +20,44 @@
 }
 
 .about-me-image {
-  width: 800px;
+  width: min(100%, 500px);
 }
 
 .about-hero-image {
-  width: 400px;
+  width: min(100%, 500px);
 }
 
 .about-hero-text {
   padding: 0rem;
+}
+
+.about-facts-text {
+  font-family: 'Carrois Gothic', sans-serif;
+}
+
+.info-list {
+  width: min(100% - 2rem, 1200px);
+ 
+  display: grid;
+  gap: 1rem;
+  padding: clamp(3rem, 8vw, 7rem) 0 5rem;
+}
+
+.info-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #180B0B;
+}
+
+.info-card-title {
+  font-family: 'Chango', sans-serif;
+  font-size: 1.5rem;
+  color: #B31619;
+  margin-bottom: 1rem;
+}
+
+.info-list li {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 720px) {
@@ -50,5 +79,33 @@
   }
   .about-hero-text p {
     margin-top: 0rem;
+    font-size: 0.95rem;
+  }
+  .about-facts p {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .info-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin: 3rem 0;
+  }
+  .info-card {
+    min-height: auto;
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+
+  .info-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }

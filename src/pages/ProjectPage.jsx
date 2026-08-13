@@ -90,10 +90,32 @@ function ProjectPage() {
         ))}
       </div>
 
-      {/* Processbeskrivelse */}
-      <section className="detail-text-section">
-        <p>{project.description}</p>
-      </section>
+      <p className="project-description">{project.description}</p>
+
+      {project.processPhases && (
+        <section className="process-phases">
+          <div className="phase-card">
+            <h3>Discover</h3>
+            <p>{project.processPhases.discover}</p>
+          </div>
+
+          <div className="phase-card">
+            <h3>Define</h3>
+            <p>{project.processPhases.define}</p>
+          </div>
+
+          <div className="phase-card">
+            <h3>Develop</h3>
+            <p>{project.processPhases.develop}</p>
+          </div>
+
+          <div className="phase-card">
+            <h3>Deliver</h3>
+            <p>{project.processPhases.deliver}</p>
+          </div>
+        </section>
+      )}
+
 
       {/* Projektets process / billeder */}
       <section className="project-process">
@@ -109,7 +131,7 @@ function ProjectPage() {
 
             <div className="process-text">
               <h3 className="project-title">{project.title2}</h3>
-              <p className="project-description">{project.description2}</p>
+              <p className="project-description2">{project.description2}</p>
               <p className="project-title25">{project.title25}</p>
             </div>
           </div>
@@ -168,6 +190,7 @@ function ProjectPage() {
             </div>
           </div>
         )}
+
 
         {/* Billede 6 - højre */}
         {project.image6 && (
