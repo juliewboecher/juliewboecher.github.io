@@ -11,6 +11,13 @@
   min-height: 58svh;
   
 }
+.hero-section h1.hero-title {
+  max-width: none;
+  width: fit-content;
+
+  font-size: 9rem;
+  line-height: 0.9;
+}
 
 .hero-information {
   position: relative;
@@ -23,6 +30,15 @@
 .hero-section h1 {
   position: relative;
 }
+
+.hero-title {
+  font-size: 9rem;
+  line-height: 0.9;
+}
+
+
+
+
 
 .hero-section h2 {
   font-size: clamp(1.3rem, 5vw, 2rem);
@@ -75,17 +91,6 @@
 
 .hero-actions {
   margin-top: 10rem;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
 }
 
 .section {
@@ -197,11 +202,12 @@
   justify-content: space-between;
 }
 
-.about-hero-text {
+.homeabout-text {
   padding: 0rem;
+  white-space: nowrap;
 }
 
-.about-hero-text p {
+.home-about-text p {
   margin-top: 7rem;
 }
 
@@ -229,6 +235,13 @@
     padding: 0;
   }
 
+   .hero-title {
+    width: auto;
+    max-width: 100%;
+
+    font-size: 4rem;
+    line-height: 0.9;
+  }
   .eyebrow-heading {
     padding: 0;
   }

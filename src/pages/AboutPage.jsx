@@ -47,7 +47,7 @@ function AboutPage() {
           <h1>Hvem er jeg?</h1>
 
           <p>
-            Jeg brænder for at skabe digitale løsninger som gør en forskel for brugeren. Jeg holder meget af at lære og udvikle mig, og jeg har et stort drive for at skabe og finde på kreative løsninger.
+            Jeg brænder for at skabe digitale løsninger som gør en forskel for brugeren. Jeg holder meget af at lære og udvikle mig, og jeg har et stort drive for at finde kreative løsninger.
           </p>
         </div>
 

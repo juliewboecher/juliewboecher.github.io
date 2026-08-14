@@ -16,7 +16,7 @@ function HomePage() {
           </h2>
           <p className="hero-description"></p>
         </div>
-        <h1>
+        <h1 className="hero-title">
           UX/UI designer<span className="animated-dot">.</span>
         </h1>
       </section>
@@ -84,7 +84,7 @@ function HomePage() {
             <p>
               Jeg brænder for at skabe digitale løsninger som gør en forskel for
               brugeren. Jeg holder meget af at lære og udvikle mig, og jeg har
-              et stort drive for at skabe og finde på kreative løsninger.
+              et stort drive for at finde kreative løsninger.
             </p>
             <div className="read-more-about">
               <Link className="project-card-button" to="/about">

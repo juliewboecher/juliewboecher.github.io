@@ -5,6 +5,15 @@
   padding: 7rem 0rem;
 }
 
+.contact-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  margin-bottom: 4rem;
+}
+
 .lead {
   width: min(100%, 500px);
   font-size: 1.15rem;
@@ -13,7 +22,7 @@
 
 .contact-list {
   display: grid;
-  gap: 0.75rem;
+  gap: 1.5rem;
   padding-left: 0rem;
   margin-bottom: 10rem;
   list-style: none;
@@ -21,16 +30,46 @@
 
 .contact-list a {
   color:#180B0B;
-  font-weight: 800;
+  font-size: 1.5rem;
 }
 .contact-list a:hover,
 .contact-list a:active {
   color:#B31619;
 }
 
-.footer-icon {
-  width: min(100%, 500px);
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon,
+.contact-icon-red {
+  width: 60px;
+  height: 60px;
   display: block;
+}
+
+.contact-icon-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.contact-list a {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-list a:hover .contact-icon {
+  opacity: 0;
+}
+
+.contact-list a:hover .contact-icon-red {
+  opacity: 1;
 }
 
 @media (max-width: 720px) {
@@ -39,3 +78,4 @@
     padding: 7rem 0;
   }
 }
+

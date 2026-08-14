@@ -116,9 +116,13 @@ a {
 
 .animated-dot {
   display: inline-block;
-  margin-left: 0;
   position: relative;
+
+  font-size: inherit;
+  line-height: inherit;
+
   z-index: 1001;
+
   animation: dot-bounce 2.2s linear forwards;
 }
 
@@ -210,6 +214,18 @@ a {
 /* Meget små telefoner */
 @media (max-width: 400px) {
   
+}
+
+@media (max-width: 720px) {
+
+  .hero-section h1.hero-title {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 4rem;
+    line-height: 0.9;
+  }
+
 }
 
 
