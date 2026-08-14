@@ -185,8 +185,11 @@
 
 .drawing-image {
   width: 600px;
-  
   border-radius: 20px;
+}
+
+.home-about-text {
+  padding-left: 2rem;
 }
 
 .about-hero {
@@ -194,25 +197,19 @@
   justify-content: space-between;
 }
 
-.home-about-text {
-  padding: 2rem;
+.about-hero-text {
+  padding: 0rem;
 }
 
-.about-hero p {
+.about-hero-text p {
   margin-top: 7rem;
 }
-
-
-
 
 .animated-dot {
   display: inline-block;
   animation: dot-bounce 2.2s linear forwards;
   transform-origin: center bottom;
-
 }
-
-
 
 @media (max-width: 720px) {
 
@@ -283,7 +280,7 @@
   .about-hero-text p {
     margin-top: 0rem;
   }
-  .home-about-text {
+  .about-text {
   padding: 0rem;
 }
 }

@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  gap: 2rem;
 }
 
 .about-hero p {
@@ -29,35 +30,149 @@
 
 .about-hero-text {
   padding: 0rem;
+  padding: 0rem;
 }
 
-.about-facts-text {
-  font-family: 'Carrois Gothic', sans-serif;
+/* ========================================
+ABOUT CATEGORIES
+======================================== */
+
+.about-categories {
+  width: 100%;
+  margin-top: 8rem;
 }
 
-.info-list {
-  width: min(100% - 2rem, 1200px);
- 
-  display: grid;
-  gap: 1rem;
-  padding: clamp(3rem, 8vw, 7rem) 0 5rem;
+.about-category {
+  border-top: 1px solid #180B0B;
 }
 
-.info-card {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #180B0B;
+.about-category:last-child {
+  border-bottom: 1px solid #180B0B;
 }
 
-.info-card-title {
-  font-family: 'Chango', sans-serif;
-  font-size: 1.5rem;
+
+/* ========================================
+CATEGORY BUTTON
+======================================== */
+
+.about-category-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem 0;
+
+  border: none;
+  background: none;
+
   color: #B31619;
-  margin-bottom: 1rem;
+
+  font-family: 'Chango', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+
+  text-align: left;
+  cursor: pointer;
 }
 
-.info-list li {
-  margin-bottom: 1rem;
+.about-category-icon {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+/* ========================================
+CATEGORY CONTENT
+======================================== */
+
+.about-category-content {
+  display: grid;
+  grid-template-rows: 0fr;
+
+  transition: grid-template-rows 0.4s ease;
+}
+
+.about-category-content.open {
+  grid-template-rows: 1fr;
+}
+
+.about-category-inner {
+  overflow: hidden;
+}
+
+.about-category-inner p {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+PROGRAM IMAGES
+======================================== */
+
+.program-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.program-list img {
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+}
+
+
+/* ========================================
+MOBILE
+======================================== */
+
+@media (max-width: 720px) {
+
+  .about-categories {
+    margin-top: 5rem;
+  }
+
+  .about-category-button {
+    padding: 1.2rem 0;
+
+    font-size: 1.4rem;
+  }
+
+  .about-category-icon {
+    font-size: 1.5rem;
+  }
+
+  .about-category-inner p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .program-list {
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .program-list img {
+    width: 40px;
+    height: 40px;
+  }
+
 }
 
 @media (max-width: 720px) {
@@ -109,3 +224,4 @@
     line-height: 1.5;
   }
 }
+

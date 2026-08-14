@@ -82,8 +82,9 @@ function HomePage() {
           <div className="home-about-text">
             <h1>Hvem er jeg?</h1>
             <p>
-              Jeg er en passioneret udvikler med fokus på at skabe brugervenlige
-              og æstetisk tiltalende digitale oplevelser.
+              Jeg brænder for at skabe digitale løsninger som gør en forskel for
+              brugeren. Jeg holder meget af at lære og udvikle mig, og jeg har
+              et stort drive for at skabe og finde på kreative løsninger.
             </p>
             <div className="read-more-about">
               <Link className="project-card-button" to="/about">

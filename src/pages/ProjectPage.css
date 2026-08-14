@@ -1,3 +1,17 @@
+.page-narrow {
+  width: min(100% - 2rem, 1200px);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 6vw, 7rem) 0 5rem;
+}
+
+.eyebrow-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .detail-hero-image {
   width: 100%;
   display: flex;
@@ -18,62 +32,36 @@
  display: grid;
  grid-template-columns: repeat(4, minmax(0, 1fr));
  gap: 1rem;
-
-
  width: 100%;
  max-width: 100%;
-
-
  margin: 8rem 0;
-
-
  min-width: 0;
 }
 
 
 .phase-card {
  padding: 2rem;
-
-
  border: 1px solid #180B0B;
  border-radius: 1rem;
-
-
  min-height: 250px;
  min-width: 0;
-
-
  display: flex;
  flex-direction: column;
-
-
  box-sizing: border-box;
 }
 
-
 .phase-card h3 {
  margin: 0 0 2rem;
-
-
  font-family: 'Chango', sans-serif;
  font-size: 1.5rem;
-
-
  color: #B31619;
 }
 
-
 .phase-card p {
  margin: 0;
-
-
  line-height: 1.6;
-
-
  overflow-wrap: break-word;
 }
-
-
 
 .project-process {
   display: flex;
@@ -121,7 +109,12 @@
   margin: 0.5rem 0;
 }
 
-.button {
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.button.secondary {
   background-color: #180B0B;
   color: white;
   padding: 0.5rem 1rem;
@@ -129,12 +122,6 @@
   border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
-}
-
-.button.secondary {
-  background-color: transparent;
-  color: #180B0B;
-  border: 1px solid #180B0B;
 }
 
 @media (max-width: 768px) {
@@ -166,8 +153,6 @@
   .project-description {
     font-size: 1rem;
   }
-
-  
 }
 
 @media (max-width: 720px) {
