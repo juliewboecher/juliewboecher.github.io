@@ -42,6 +42,10 @@ const projects = [
         label: "GitHub repo",
         href: "https://github.com/mamelishah/gemly-project-webapplication",
       },
+      {
+        label: "Figma Prototype",
+        href: "https://www.figma.com/proto/8rD5x678qqW7x41Hw870dF/Gemly-Designfil?node-id=1740-26092&viewport=681%2C2244%2C0.3&t=n5fzNl0vgncwkZWn-1&scaling=scale-down&content-scaling=responsive&starting-point-node-id=1740%3A26092&page-id=1%3A5",
+      },
     ],
     processPhases: {
       discover: "Brainstorm emne, Undersøgt målgruppe, HMW, Card Sorting.",
@@ -121,7 +125,7 @@ const projects = [
   },
   {
     slug: "Story Hangers",
-    title: "Story Hangers, Konceptudvikling af retail tøjbrand",
+    title: "Story Hangers",
     year: "2026",
     type: "Skole",
     summary: "En personlig portfolio bygget med React, Vite og GitHub Pages.",
@@ -150,6 +154,10 @@ const projects = [
       {
         label: "GitHub repo",
         href: "https://github.com/juliewboecher/customer-experience-exam",
+      },
+      {
+        label: "Figma Prototype",
+        href: "https://www.figma.com/proto/ry3SWKjxsmnVtiojCvEkmU/Story-Hangers-Eksamensprojekt?page-id=1103%3A4106&node-id=828-1679&viewport=293%2C214%2C0.14&t=LXtMGLUnzVZn21q9-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=828%3A1679",
       },
     ],
     processPhases: {
@@ -196,6 +204,10 @@ const projects = [
         label: "GitHub repo",
         href: "https://github.com/juliewboecher/lumina-eksamen-jwb",
       },
+      {
+        label: "Figma Prototype",
+        href: "https://www.figma.com/proto/tcH789U2WGFVixFzXHccYm/Figma-prototype---JulieWB-eksamen-1.sem?page-id=0%3A1&node-id=1-44&viewport=-2127%2C-150%2C0.13&t=BqT9snU6Vcm1xx9q-1&scaling=min-zoom&content-scaling=fixed",
+      },
     ],
     processPhases: {
       discover: "Brainstorm emne, Undersøgt målgruppe, HMW, Card Sorting.",
@@ -240,6 +252,10 @@ const projects = [
       {
         label: "GitHub repo",
         href: "https://github.com/Ludwigvalentin/Demoged",
+      },
+      {
+        label: "Figma Prototype",
+        href: "https://www.figma.com/proto/loTtGbDGOBfRvKvSvGaWHK/Spilcafeen-prototype?node-id=398-2526&viewport=-2139%2C112%2C0.11&t=olDpTT2VGuDKwcGs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=355%3A5312&page-id=2%3A4023",
       },
     ],
     processPhases: {

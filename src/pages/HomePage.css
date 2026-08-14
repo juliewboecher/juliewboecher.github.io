@@ -62,7 +62,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 500px;
+  width: min(100%, 500px);
 }
 
 .hero-actions {
@@ -207,7 +207,7 @@
   white-space: nowrap;
 }
 
-.home-about-text p {
+.homeabout-text p {
   margin-top: 7rem;
 }
 
@@ -231,7 +231,7 @@
   }
 
   .hero-section h1 {
-    width: 100%;
+    font-size: clamp(3rem, 10vw, 4rem);
     padding: 0;
   }
 
@@ -258,8 +258,7 @@
 
   .hero-image {
     width: 100%;
-    margin-top: 2rem;
-    justify-content: center;
+    max-width: 500px;
   }
 
   .project-card {
