@@ -36,7 +36,7 @@ const projects = [
     links: [
       {
         label: "Live site",
-        href: "https://mamelishah.github.io/gemly-project-webapplication/?fbclid=IwY2xjawTccINleHRuA2FlbQIxMABicmlkETEzRHQ1UGtGVFRHNmlQcUNDc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmjDh_q66Pf6jNzjWrCZSkALHrZub2cB-06XqTNPDHs7uUtp1SKoVGIU3HEq_aem_SHpQW8Mv1u0v50kKUtWqcg",
+        href: "https://mohammadkamell.github.io/gemly-project-webapplication/",
       },
       {
         label: "GitHub repo",
@@ -91,7 +91,6 @@ const projects = [
         href: "https://www.instagram.com/cafesmaglos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
     ],
-    
   },
   {
     slug: "Surrealistisk-Collage",
@@ -107,27 +106,18 @@ const projects = [
       "Beskriv hvordan du har brugt Adobe Premiere Pro i projektet.",
     title3: "Lag",
     description3: "Beskriv hvordan du har brugt Reel i projektet.",
-    title4: "Flow",
-    description4: "Beskriv hvordan du har brugt Flow i projektet.",
-    title5: "Udvikling",
-    description5: "Beskriv hvordan du har brugt Flow i projektet.",
+    title4: "Lys",
+    description4: "Beskriv hvordan du har brugt Lys i projektet.",
+    title5: "Process",
+    description5: "Beskriv hvordan du har brugt Process i projektet.",
     title6: "Resultat",
-    description6: "Beskriv hvordan du har brugt Flow i projektet.",
+    description6: "Beskriv hvordan du har brugt Resultat i projektet.",
     image: `${import.meta.env.BASE_URL}surrealistiskmock.png`,
     image1: `${import.meta.env.BASE_URL}Youseewhatyouwannasee.png`,
     image2: `${import.meta.env.BASE_URL}photoshop.svg`,
     image3: `${import.meta.env.BASE_URL}surrealistiskbilleder.png`,
     image4: `${import.meta.env.BASE_URL}surrealistisknobg.png`,
-    links: [
-      {
-        label: "Live site",
-        href: "https://username.github.io",
-      },
-      {
-        label: "GitHub repo",
-        href: "https://github.com/username/username.github.io",
-      },
-    ],
+    links: [],
   },
   {
     slug: "Story Hangers",
@@ -200,11 +190,11 @@ const projects = [
     links: [
       {
         label: "Live site",
-        href: "https://username.github.io",
+        href: "https://juliewboecher.github.io/lumina-eksamen-jwb/",
       },
       {
         label: "GitHub repo",
-        href: "https://github.com/username/username.github.io",
+        href: "https://github.com/juliewboecher/lumina-eksamen-jwb",
       },
     ],
     processPhases: {
@@ -245,11 +235,11 @@ const projects = [
     links: [
       {
         label: "Live site",
-        href: "https://username.github.io",
+        href: "https://ludwigvalentin.github.io/Demoged/",
       },
       {
         label: "GitHub repo",
-        href: "https://github.com/username/username.github.io",
+        href: "https://github.com/Ludwigvalentin/Demoged",
       },
     ],
     processPhases: {

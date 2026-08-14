@@ -46,189 +46,188 @@ function ProjectPage() {
   }
 
   return (
-    <article className="page-narrow">
-      {/* Tilbage til projekter */}
-      <Link className="back-link" to="/projects">
-        Tilbage til projekter
-      </Link>
+    <div className="page-narrow">
+      <article className="project-page">
+        {/* Tilbage til projekter */}
+        <Link className="back-link" to="/projects">
+          Tilbage til projekter
+        </Link>
 
-      {/* Projekt information */}
-      <div className="eyebrow-container">
-        <p className="eyebrow">{project.year}</p>
-        <p className="eyebrow">{project.type}</p>
-      </div>
+        {/* Projekt information */}
+        <div className="eyebrow-container">
+          <p className="eyebrow">{project.year}</p>
+          <p className="eyebrow">{project.type}</p>
+        </div>
 
-      <h1 className="detail-title">{project.title}</h1>
+        <ul className="tag-list">
+          {project.tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
 
-      <p>{project.summary}</p>
+        <h1 className="detail-title">{project.title}</h1>
 
-      <ul className="tag-list">
-        {project.tags.map((tag) => (
-          <li key={tag}>{tag}</li>
-        ))}
-      </ul>
+        <p>{project.summary}</p>
+        {/* Links */}
+        <div className="actions">
+          {project.links.map((link) => (
+            <a
+              className="button secondary"
+              href={link.href}
+              key={link.href}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
 
-      {/* Hero billede */}
-      <div className="detail-hero-image">
-        {project.image && (
-          <img className="detail-hero-img" src={project.image1} alt="" />
+        {/* Hero billede */}
+        <div className="detail-hero-image">
+          {project.image && (
+            <img className="detail-hero-img" src={project.image1} alt="" />
+          )}
+        </div>
+
+        <p className="project-description">{project.description}</p>
+
+        {project.processPhases && (
+          <section className="process-phases">
+            <div className="phase-card">
+              <h3>Discover</h3>
+              <p>{project.processPhases.discover}</p>
+            </div>
+
+            <div className="phase-card">
+              <h3>Define</h3>
+              <p>{project.processPhases.define}</p>
+            </div>
+
+            <div className="phase-card">
+              <h3>Develop</h3>
+              <p>{project.processPhases.develop}</p>
+            </div>
+
+            <div className="phase-card">
+              <h3>Deliver</h3>
+              <p>{project.processPhases.deliver}</p>
+            </div>
+          </section>
         )}
-      </div>
 
-      {/* Links */}
-      <div className="actions">
-        {project.links.map((link) => (
-          <a
-            className="button secondary"
-            href={link.href}
-            key={link.href}
-            rel="noreferrer"
-            target="_blank"
-          >
-            {link.label}
-          </a>
-        ))}
-      </div>
+        {/* Projektets process / billeder */}
+        <section className="project-process">
+          {project.image2 && (
+            <div className="process-row reverse">
+              <div className="process-image">
+                <img
+                  ref={(el) => (imagesRef.current[0] = el)}
+                  src={project.image2}
+                  alt=""
+                />
+              </div>
 
-      <p className="project-description">{project.description}</p>
+              <div className="process-text">
+                <h3 className="project-title">{project.title2}</h3>
+                <p className="project-description2">{project.description2}</p>
+                <p className="project-title25">{project.title25}</p>
+              </div>
+            </div>
+          )}
 
-      {project.processPhases && (
-        <section className="process-phases">
-          <div className="phase-card">
-            <h3>Discover</h3>
-            <p>{project.processPhases.discover}</p>
-          </div>
+          {/* Billede 3 - venstre */}
+          {project.image3 && (
+            <div className="process-row">
+              <div className="process-image">
+                <img
+                  ref={(el) => (imagesRef.current[1] = el)}
+                  src={project.image3}
+                  alt=""
+                />
+              </div>
 
-          <div className="phase-card">
-            <h3>Define</h3>
-            <p>{project.processPhases.define}</p>
-          </div>
+              <div className="process-text">
+                <h3 className="project-title">{project.title3}</h3>
+                <p> {project.description3}</p>
+              </div>
+            </div>
+          )}
 
-          <div className="phase-card">
-            <h3>Develop</h3>
-            <p>{project.processPhases.develop}</p>
-          </div>
+          {/* Billede 4 - højre */}
+          {project.image4 && (
+            <div className="process-row reverse">
+              <div className="process-image">
+                <img
+                  ref={(el) => (imagesRef.current[2] = el)}
+                  src={project.image4}
+                  alt=""
+                />
+              </div>
 
-          <div className="phase-card">
-            <h3>Deliver</h3>
-            <p>{project.processPhases.deliver}</p>
-          </div>
+              <div className="process-text">
+                <h3 className="project-title">{project.title4}</h3>
+                <p>{project.description4}</p>
+              </div>
+            </div>
+          )}
+
+          {/* Billede 5 - venstre */}
+          {project.image5 && (
+            <div className="process-row">
+              <div className="process-image">
+                <img
+                  ref={(el) => (imagesRef.current[3] = el)}
+                  src={project.image5}
+                  alt=""
+                />
+              </div>
+
+              <div className="process-text">
+                <h3 className="project-title">{project.title5}</h3>
+                <p>{project.description5}</p>
+              </div>
+            </div>
+          )}
+
+          {/* Billede 6 - højre */}
+          {project.image6 && (
+            <div className="process-row reverse">
+              <div className="process-image">
+                <img
+                  ref={(el) => (imagesRef.current[4] = el)}
+                  src={project.image6}
+                  alt=""
+                />
+              </div>
+
+              <div className="process-text">
+                <h3 className="project-title">{project.title6}</h3>
+                <p>{project.description6}</p>
+              </div>
+            </div>
+          )}
+
+          {/* Billede 7 - venstre */}
+          {project.image7 && (
+            <div className="process-row">
+              <div className="process-image">
+                <img
+                  ref={(el) => (imagesRef.current[5] = el)}
+                  src={project.image7}
+                  alt=""
+                />
+              </div>
+
+              <div className="process-text">
+                <h3 className="project-title">{project.title7}</h3>
+                <p>{project.description7}</p>
+              </div>
+            </div>
+          )}
         </section>
-      )}
-
-
-      {/* Projektets process / billeder */}
-      <section className="project-process">
-        {project.image2 && (
-          <div className="process-row reverse">
-            <div className="process-image">
-              <img
-                ref={(el) => (imagesRef.current[0] = el)}
-                src={project.image2}
-                alt=""
-              />
-            </div>
-
-            <div className="process-text">
-              <h3 className="project-title">{project.title2}</h3>
-              <p className="project-description2">{project.description2}</p>
-              <p className="project-title25">{project.title25}</p>
-            </div>
-          </div>
-        )}
-
-        {/* Billede 3 - venstre */}
-        {project.image3 && (
-          <div className="process-row">
-            <div className="process-image">
-              <img
-                ref={(el) => (imagesRef.current[1] = el)}
-                src={project.image3}
-                alt=""
-              />
-            </div>
-
-            <div className="process-text">
-              <h3 className="project-title">{project.title3}</h3>
-              <p> {project.description3}</p>
-            </div>
-          </div>
-        )}
-
-        {/* Billede 4 - højre */}
-        {project.image4 && (
-          <div className="process-row reverse">
-            <div className="process-image">
-              <img
-                ref={(el) => (imagesRef.current[2] = el)}
-                src={project.image4}
-                alt=""
-              />
-            </div>
-
-            <div className="process-text">
-              <h3 className="project-title">{project.title4}</h3>
-              <p>{project.description4}</p>
-            </div>
-          </div>
-        )}
-
-        {/* Billede 5 - venstre */}
-        {project.image5 && (
-          <div className="process-row">
-            <div className="process-image">
-              <img
-                ref={(el) => (imagesRef.current[3] = el)}
-                src={project.image5}
-                alt=""
-              />
-            </div>
-
-            <div className="process-text">
-              <h3 className="project-title">{project.title5}</h3>
-              <p>{project.description5}</p>
-            </div>
-          </div>
-        )}
-
-
-        {/* Billede 6 - højre */}
-        {project.image6 && (
-          <div className="process-row reverse">
-            <div className="process-image">
-              <img
-                ref={(el) => (imagesRef.current[4] = el)}
-                src={project.image6}
-                alt=""
-              />
-            </div>
-
-            <div className="process-text">
-              <h3 className="project-title">{project.title6}</h3>
-              <p>{project.description6}</p>
-            </div>
-          </div>
-        )}
-
-        {/* Billede 7 - venstre */}
-        {project.image7 && (
-          <div className="process-row">
-            <div className="process-image">
-              <img
-                ref={(el) => (imagesRef.current[5] = el)}
-                src={project.image7}
-                alt=""
-              />
-            </div>
-
-            <div className="process-text">
-              <h3 className="project-title">{project.title7}</h3>
-              <p>{project.description7}</p>
-            </div>
-          </div>
-        )}
-      </section>
-    </article>
+      </article>
+    </div>
   );
 }
 
